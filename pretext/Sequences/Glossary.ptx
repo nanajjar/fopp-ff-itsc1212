@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<section xml:id="sequences_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>sequence</title>
+      <p>An ordered collection of values where each value is identified by an integer
+        index.</p>
+    </gi>
+    <gi>
+      <title>string</title>
+      <p>A sequence of characters.</p>
+    </gi>
+    <gi>
+      <title>list</title>
+      <p>A sequence of values.</p>
+    </gi>
+    <gi>
+      <title>element</title>
+      <p>One of the values in a list (or other sequence), also called items.</p>
+    </gi>
+  
+    <gi>
+      <title>index</title>
+      <p>An integer value used to select an item in a sequence, such as a character in a string.
+        In Python indices start from 0.</p>
+    </gi>
+    <gi>
+      <title>slice</title>
+      <p>A part of a string specified by a range of indices</p>
+    </gi>
+    <gi>
+      <title>concatenate</title>
+      <p>To join two operands end-to-end.</p>
+    </gi>
+   
+    <gi>
+      <title>immutable</title>
+      <p>The property of a sequence whose items cannot be changed.</p>
+    </gi>
+    <gi>
+      <title>length</title>
+      <p>Number of characters in a string. It can be found by (len) function Example: len('happy') evaluates to 5.</p>
+    </gi>
+    <gi>
+      <title>high-level language</title>
+      <p>A programming language like Python that is designed to be easy for
+                            humans to read and write.</p>
+    </gi>
+    <gi>
+      <title>indexing(<c>[]</c>)</title>
+      <p>Access a single character in a string using its position (starting from 0). Example: 'This'[2] evaluates to 'i'.</p>
+    </gi>
+    <gi>
+      <title>low-level language</title>
+      <p>A programming language that is designed to be easy for a computer to
+                            execute; also called machine language or assembly language.</p>
+    </gi>
+    <gi>
+      <title>natural language</title>
+      <p>Any one of the languages that people speak that evolved naturally.</p>
+    </gi>
+    <gi>
+      <title>object code</title>
+      <p>The output of the compiler after it translates the program.</p>
+    </gi>
+    <gi>
+      <title>parse</title>
+      <p>To examine a program and analyze the syntactic structure.</p>
+    </gi>
+    <gi>
+      <title>portability</title>
+      <p>A property of a program that can run on more than one kind of computer.</p>
+    </gi>
+    <gi>
+      <title>print function</title>
+      <p>A function used in a program or script that causes the Python
+                            interpreter to display a value on its output device.</p>
+    </gi>
+    <gi>
+      <title>problem solving</title>
+      <p>The process of formulating a problem, finding a solution, and
+                            expressing the solution.</p>
+    </gi>
+    <gi>
+      <title>program</title>
+      <p>A sequence of instructions that specifies to a computer actions and
+                            computations to be performed.</p>
+    </gi>
+    <gi>
+      <title>programming language</title>
+      <p>A formal notation for representing solutions.</p>
+    </gi>
+    <gi>
+      <title>Python shell</title>
+      <p>An interactive user interface to the Python interpreter. The user of a
+                            Python shell types commands at the prompt (&gt;&gt;&gt;), and presses the return
+                            key to send these commands immediately to the interpreter for
+                            processing.</p>
+    </gi>
+    <gi>
+      <title>runtime error</title>
+      <p>An error that does not occur until the program has started to execute
+                            but that prevents the program from continuing.</p>
+    </gi>
+    <gi>
+      <title>semantic error</title>
+      <p>An error in a program that makes it do something other than what the
+                            programmer intended.</p>
+    </gi>
+    <gi>
+      <title>semantics</title>
+      <p>The meaning of a program.</p>
+    </gi>
+    <gi>
+      <title>shell mode</title>
+      <p>A style of using Python where we type expressions at the command
+                            prompt, and the results are shown immediately.  Contrast with
+                            <term>source code</term>, and see the entry under <term>Python shell</term>.</p>
+    </gi>
+    <gi>
+      <title>source code</title>
+      <p>A program, stored in a file, in a high-level language before being compiled or interpreted.</p>
+    </gi>
+    <gi>
+      <title>syntax</title>
+      <p>The structure of a program.</p>
+    </gi>
+    <gi>
+      <title>syntax error</title>
+      <p>An error in a program that makes it impossible to parse &#x2014; and
+                            therefore impossible to interpret.</p>
+    </gi>
+    <gi>
+      <title>token</title>
+      <p>One of the basic elements of the syntactic structure of a program,
+                            analogous to a word in a natural language.</p>
+    </gi>
+  </glossary>
+</section>

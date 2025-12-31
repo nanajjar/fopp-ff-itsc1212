@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_function-calls">
+  <title>Function Calls</title>
+
+  <p>
+    The most fundamental action in programming is asking the computer to do something. In Python and most high-level languages, this begins with calling functions.
+     Before learning how to write our own programs in full, we first learn how to use functions that already exist-invoking them to perform tasks, compute values, and produce output.
+  </p>
+  <p>
+    Calling a function is one of the earliest and most important building blocks of programming. Each function call follows a simple pattern: information goes in, work is done, and a result may come out. By learning how to call functions and reason about what they do, we begin to understand how programs are constructed and how computation happens step by step.
+  </p>
+
+<p>
+  In programming, a function is a subroutine, designed to perform a specific task. When you "call" a function, you're asking it to execute its task. Functions can take in information, known as arguments, work with that information, and then often return a result. For example, print() is a function which takes in a single string argument between the parentheses and performs the task: Printing the string argument we provided to the terminal.
+</p>
+
+  <p>The Python interpreter can compute new values with function calls. You are familiar with the
+    idea of functions from high school algebra. There you might define a function <c>f</c> by
+    specifying how it transforms an input into an output, <c>f(x) = 3x + 2</c>. Then, you might
+    write <c>f(5)</c> and expect to get the value 17.</p>
+  <p>Python adopts a similar syntax for invoking functions. If there is a named function <c>foo</c>
+    that takes a single input, we can invoke foo on the value 5 by writing <c>foo(5)</c>.</p>
+  <p>There are many built-in functions available in Python. You'll be seeing some in this chapter
+    and the next couple of chapters.</p>
+  <p>Functions are like factories that take in some material, do some operation, and then send out
+    the resulting object.</p>
+  <image source="SimplePythonData/Figures/function_object.png" width="50%"
+    alt="Icon that represents a function. Appears simliar to a factory with three places on top for inputs to come in and a place on the bottom for the output/return value to come out." />
+  <p>In this case, we refer to the materials as arguments or inputs and the resulting object is
+    referred to as output or return value. This process of taking input, doing something, and then
+    sending back the output is demonstrated in the gif below.</p>
+  <image source="SimplePythonData/Figures/function_calls.gif" width="50%"
+    alt="Animated gif that deomnstrates using the visual representation of a factory as used above. Shows three arrows coming into the function to represent that input or arguments that a function can require. It then shows the function object shaking, representing an action being completed by the function. Then it shows annother arrow leaving the function image, which represents a return value or output coming from the factory." />
+  <note>
+    <p>Don't confuse the <q>output value</q> of a function with the output window. The output of a
+      function is a Python value and we can never really see the internal representation of a value.
+      But we can draw pictures to help us imagine what values are, or we can print them to see an
+      external representation in the output window.</p>
+    <p>To confuse things even more, <c>print</c> is actually a function. All functions produce
+      output values. Only the <c>print</c> function causes things to appear in the output window.</p>
+  </note>
+  <p>It is also possible for programmers to define new functions in their programs. You will learn
+    how to do that later in the course. For now, you just need to learn how to invoke, or call, a
+    function, and understand that the execution of the function returns a computed value.</p>
+
+
+
+    <p>
+      Python provides many built-in functions that follow the Input-Process-Output (IPO) model. 
+      Even though we do not see their internal code, we can still reason about what they do by identifying their inputs, 
+      the computation they perform, and the outputs they produce.
+    </p>
+
+<p>
+  One function you have already been using is print.
+  <ul>
+    <li>
+      <p>
+        Input: One or more values placed inside the parentheses
+      </p>
+    </li>
+    <li>
+      <p>
+        Process: Python converts those values into a human-readable form
+      </p>
+    </li>
+    <li>
+      <p>
+        Output: The values are displayed in the output window
+      </p>
+    </li>
+  </ul>
+</p>
+
+<p>
+For example:
+
+ <program xml:id="ac2_4_1"  language="python" label="ac2_4_1">
+    <input>
+print(3)
+print(3 + 2)
+print(10 - 4)
+
+    </input>
+  </program>
+</p><p>
+In each example, Python first evaluates the expression inside the parentheses, producing a single value. That value is then passed as input to the print function, which displays it as output.
+</p>
+<p>
+Some built-in functions take multiple inputs, separated by commas. The order of inputs matters, because each position corresponds to a specific role in the function’s computation. For example, a function that compares two values treats the first value differently from the second.
+</p>
+
+
+<p>[SUBSECTION]Seeing Output vs. Computing Values</p>
+
+<p>Not every computation automatically produces visible output. Python can compute a value without displaying it.
+For example, consider the following code:</p>
+<program xml:id="ac2_4_2"  interactive="activecode"  language="python" label="ac2_4_2">
+    <input>
+3 + 4
+    </input>
+  </program>
+  <p>
+    This expression has:
+<ul>
+  <li>
+    <p>
+Input: The numbers 3 and 2
+    </p>
+  </li>
+  <li>
+    <p>
+      Process: Addition
+    </p>
+  </li>
+  <li>
+    <p>
+      Output: The value 5
+    </p>
+    </li>
+</ul>
+
+
+However, unless the result is passed to print, the output is not shown in the output window.
+
+  </p>
+<program xml:id="ac2_4_3"  interactive="activecode"  language="python" label="ac2_4_3">
+    <input>
+print(3 + 4)
+    </input>
+  </program>
+  <p>Here, print is responsible for making the output visible.</p>
+
+<subsection>
+  <title>Function calls as part of complex expressions</title>
+
+<p>Function calls can appear anywhere a value is expected. 
+  The output of one function can become the input to another computation. 
+  Anywhere in an expression that you can write a literal like a number, you can also write a function invocation that produces a number.
+  </p>
+<p>For example:</p>
+<program xml:id="ac2_4_4"  interactive="activecode"  language="python" label="ac2_4_4">
+    <input>
+print(abs(-3) + 2)
+print(max(3, 7) - min(1, 4))
+    </input>
+  </program>
+  <p>In these examples:
+    <ol>
+      <li>
+        <p>
+          Inner functions (abs, max, min) receive inputs and produce outputs.
+        </p>
+      </li>
+      <li>
+        <p>
+          Their outputs are used as inputs to larger expressions.
+        </p>
+      </li>
+      <li>
+        <p>
+          print displays the final result.
+        </p>
+      </li>
+    </ol>
+  </p>
+<p>
+This kind of chaining, where the output of one function or expression becomes the input to another, is a common pattern in programming.
+  </p>
+<p>
+  Let's generalize this. To trace a chained expression, you work from the inside out, keeping track of each step's input, process, and output.
+<ol>
+  <li>
+    <p>
+      Start with the innermost expression or function call.
+Identify its inputs and determine the value it produces.
+    </p>
+  </li>
+  <li>
+    <p>
+      Replace that part of the expression with its result.
+This makes the remaining expression simpler and easier to follow.
+    </p>
+  </li>
+  <li>
+    <p>
+      Repeat the process until only one value remains.
+Each step produces a single value that becomes the input to the next step.
+    </p>
+  </li>
+  <li>
+    <p>
+      Apply print last.
+Once the final value is computed, it is passed to print, which displays it.
+    </p>
+  </li>
+</ol>
+</p>
+<p>
+
+  Here is a step-by-step trace of <c>print(max(3,7) - min(1,4))</c>:
+  <ul>
+    <li>
+      <p>
+max(3, 7) → produces 7
+      </p>
+    </li>
+    <li>
+      <p>
+min(1, 4) → produces 1
+      </p>
+    </li>
+    <li>
+      <p>
+        The expression becomes print(7 - 1)
+      </p>
+    </li>
+    <li>
+      <p>
+        7 - 1 → produces 6
+      </p>
+    </li>
+    <li>
+      <p>
+        print(6) displays 6
+      </p>
+    </li>
+  </ul>
+  Use CodeLense to see how these execution unfolds step by step.
+</p>
+<p>
+  When tracing, it often helps to write down each intermediate value or rewrite the expression after each step. This makes it easier to see how values flow through the program and is a powerful strategy for both understanding code and debugging errors.
+
+</p>
+
+</subsection>
+<subsection>
+ <title>Functions Are Objects; Parentheses Trigger the Process</title>
+
+<p>
+  Functions in Python are themselves objects. Referring to a function by name identifies the object, but does not perform its computation.
+</p>
+  <p>
+  If you try to execute this code, nothing will be printed in the output window because the function has not been invoked. This just refers to the print function object. 
+  </p>
+ <program xml:id="ac2_4_5"  interactive="activecode"  language="python" label="ac2_4_5">
+    <input>
+print
+</input>
+  </program>
+  <p>
+  Adding parentheses invokes the function as the parentheses signal to Python that the function's process should be executed.
+  </p>
+
+    <program xml:id="ac2_4_6"  interactive="activecode"  language="python" label="ac2_4_6">
+    <input>
+print(3)
+</input>
+  </program>
+</subsection>
+  <!-- <listing>
+  <program xml:id="ac2_4_1" interactive="activecode" language="python" label="ac2_4_1">
+    <input>
+      def square(x: int) -&gt; int:
+        return x * x
+
+      def sub(x: int, y: int) -&gt; int:
+        return x - y
+    </input>
+  </program>
+</listing>
+  <p>We've defined two functions above. The code is hidden so as not to bother you (yet) with how
+    functions are defined. <c>square</c> takes a single input parameter, and returns that input
+    multiplied by itself. <c>sub</c> takes two input parameters and returns the result of
+    subtracting the second from the first. Obviously, these functions are not particularly useful,
+    since we have the operators <c>*</c> and <c>-</c> available. But they illustrate how functions
+    work. The visual below illustrates how the <c>square</c> function works.</p>
+  <image source="SimplePythonData/Figures/square_function.gif" width="50%"
+    alt="a visual of the square function. Four is provided as the input, the function object shakes, and then sixteen comes out from the bottom of the function object." />
+  <program xml:id="ac2_4_2" interactive="activecode" language="python" include="ac2_4_1">
+    <input>
+      print(square(3))
+      square(5)
+      print(sub(6, 4))
+      print(sub(5, 9))
+    </input>
+  </program>
+  <p>Notice that when a function takes more than one input parameter, the inputs are separated by a
+    comma. Also notice
+    that the order of the inputs matters. The value before the comma is treated as the first input,
+    the value after it
+    as the second input.</p>
+  <p>Again, remember that when Python performs computations, the results are only shown in the
+    output window if there's a print statement that says to do that. In the activecode window above, <c>
+    square(5)</c> produces the value 25 but we never get to see that in the output window, because
+    it is not printed.</p>
+  <subsection xml:id="simple-python-data_function-calls-as-part-of-complex-expressions">
+    <title>Function calls as part of complex expressions</title>
+    <p>Anywhere in an expression that you can write a literal like a number, you can also write a
+      function invocation that
+      produces a number.</p>
+    <p>For example:</p>
+    <program xml:id="ac2_4_3" interactive="activecode" language="python" include="ac2_4_1">
+      <input>
+        print(square(3) + 2)
+        print(sub(square(3), square(1+1)))
+      </input>
+    </program>
+    <p>Let's take a look at how that last execution unfolds.</p>
+    <exercise runestone="se_ac2_4_1a" />
+  </subsection>
+  <subsection xml:id="simple-python-data_functions-are-objects-parentheses-invoke-functions">
+    <title>Functions are objects; parentheses invoke functions</title>
+    <p>Remember that earlier we mentioned that some kinds of Python objects don't have a nice
+      printed representation? Functions are
+      themselves just objects. If you tell Python to print the function object, rather than printing
+      the results of invoking
+      the function object, you'll get one of those not-so-nice printed representations.</p>
+    <p>Just typing the name of the function refers to the function as an object. Typing the name of
+      the function followed by parentheses <c>()</c> invokes the function.</p>
+    <program xml:id="ac2_4_4" interactive="activecode" language="python" include="ac2_4_1">
+      <input>
+        print(square)
+        print(square(3))
+      </input>
+    </program>
+  </subsection> -->
+</section>

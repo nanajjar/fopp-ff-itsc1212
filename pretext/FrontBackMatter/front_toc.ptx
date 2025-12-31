@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <chunking level="1" />
+    <titlepage>
+        <author>
+            <personname>Nadia Najjar</personname>
+            <department>College of Computing and Informatics</department>
+            <institution>University of North Carolina at Charlotte</institution>
+        </author>
+
+        
+        <credit>
+            <title>Original Foundations of Python Programming</title>
+            <author>
+                <personname>Brad Miller and Paul Resnick</personname>
+                <institution>Runestone Academy</institution>
+            </author>
+        </credit>
+        <credit>
+            <title>Functions First Edition</title>
+            <author>
+                <personname>Matthew Hrehirchuk, Eric Chalmers, Charlotte Curtis, and Patrick Perri</personname>
+                <institution>Mount Royal University</institution>
+            </author>
+        </credit>
+
+        <date><today /></date>
+    </titlepage>
+
+    <xi:include href="./foreword.ptx" />
+    <xi:include href="./foreword_og.ptx" />
+    <xi:include href="./preface.ptx" />
+    <xi:include href="./contrib.ptx" />
+    
+</frontmatter>

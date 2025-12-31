@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<section xml:id="simple-python-output">
+  <title>Output</title>
+<p>
+  So far, we have already been using the print function to display values in the output window. 
+  Even though print may feel familiar by now, it plays a critical role in how programs communicate results to users.
+</p>
+  
+<p>
+In earlier examples, print allowed us to see the results of expressions and function calls. 
+However, printing fixed values or single expressions is often not enough. 
+As programs become more useful and flexible, they need to produce output that reflects the results of computation based on variables, expressions, and user input.
+</p>
+  
+<p>
+  In Python, the primary way to produce output is through the built-in print function.
+</p>
+  
+  <program language="python">
+    <input>
+print("Hello, world!")
+print(42)
+print(3 + 5)
+
+    </input>
+  </program>
+
+  <p>
+    As we've seen before, Python first evaluates any expressions inside the parentheses, producing a single value. 
+    That value is then passed to the print function, which displays it in the output window.
+  </p>
+
+  <p>
+    
+ We've also seen how the print function can display the value of a variable just as easily as a literal value. For example:
+  </p>
+
+  <program language="python" interactive="activecode">
+    <input>
+name = "Alice"
+print(name)
+
+    </input>
+  </program>
+
+  <p>
+    Here, the value stored in <c>name</c> is sent to print and displayed. 
+    Printing a variable does not change its value, it only shows it.
+  </p>
+<program language="python" interactive="activecode">
+  <input>
+x = 10
+print(x + 5)
+print(x)
+  </input>
+</program>
+ <p>
+  Even after printing x + 5, the value of x remains unchanged.
+ </p>
+
+ 
+<subsection xml:id="subsec-">
+  <title>Printing Expressions</title>
+  <p>
+  The argument passed to print does not need to be a simple value. 
+  It can be any expression that produces a value, including expressions that involve operators or function calls.
+  </p>
+  <program language="python" interactive="activecode">
+    <input>
+minutes = 125
+print(minutes // 60)
+print(minutes % 60)
+
+</input>
+  </program>
+  <p>
+    In this example, we compute the number of hours and remaining minutes from a total number of minutes. 
+    The expressions <c>minutes // 60</c> and <c>minutes % 60</c> are evaluated first, and their results are printed. 
+    So Python evaluates each expression first, then prints the resulting value. This allows print to serve as a window into the program's computation.
+  </p>
+</subsection>
+<subsection xml:id="subsec-functions-and-different-types-of-parameters">
+  <title>
+    Functions and Different Types of Parameters
+</title>
+  <p>
+Each function expects a particular number and type of input values-sometimes none at all-and is written to operate on those values in specific ways. 
+The print function is a good example of this flexibility:
+</p>
+  <program language="python" interactive="activecode">
+    <input>print(10)
+print("ten")
+print(10, "minutes")
+print(3 + 2, "seconds")
+    </input>
+  </program>    
+  <p>
+    In each case, <c>print</c> performs the same overall task which is displaying output but adapts its behavior based on the types of values passed to it. 
+    Numbers are displayed as numbers, strings are displayed as text, and expressions are evaluated before being printed.
+</p>
+<p>
+  This does not mean that all functions accept all types of values. 
+  Some functions are more restrictive and require inputs of a specific type. 
+  For example, a function designed to perform arithmetic may only accept numbers, 
+  while a function designed to work with text may only accept strings.
+  </p>
+
+  <p>
+    So far, we have used print with a single value, but the print function can take multiple input values, separated by commas.
+  </p>
+  <program language="python" interactive="activecode">
+    <input>
+hours = 2
+minutes = 5
+print("Time:", hours, "hours and", minutes, "minutes")
+
+    </input>
+  </program>
+  <p>
+    In this example, <c>print</c> is called with several arguments. 
+    Each argument can be a different type of value, such as a string or an integer. 
+    The <c>print</c> function handles each value appropriately and displays them together in a readable way. 
+  </p>
+  <p>
+    
+When multiple values are provided, print displays them in the order they are given, inserting a space between each value by default. 
+This allows us to combine text and numbers in a single line of output without converting values to strings ourselves.
+  </p>
+
+  </subsection>
+   <remark> 
+    <p>
+      <term>Explore More</term>
+    </p>
+    <p>The behavior of a function depends on:
+<ul>
+  <li>
+    <p>
+      How many values are passed to it
+    </p>
+  </li>
+  <li>
+    <p>
+      The order in which those values are passed
+    </p>
+  </li>
+  <li>
+    <p>
+      The types of those values
+    </p>
+  </li>
+</ul>
+
+With <c>print</c>, these differences are mostly handled for you. 
+Other functions may respond differently or even produce errors if they receive inputs they do not expect.
+ 
+Now that you understand that a function's behavior depends on its inputs, you can use the documentation to see how it works, 
+trace what the program is doing, and figure out what went wrong when there is an error.
+
+Take a look at   <url href="https://docs.python.org/3/library/functions.html#print">the documentation for the <c>print</c> function </url>
+and explore some of the different ways it can be used.
+</p>
+    </remark>
+  </section>

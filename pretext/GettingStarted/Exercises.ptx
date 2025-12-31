@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<exercises xml:id="debugging_exercises">
+  <title>Drill and Practice</title>
+
+
+  <exercise label="clickable-error">
+    <statement>
+      <p>
+        Identify the problematic statements in this Python code.
+      </p>
+    </statement>
+    <areas language="python">
+      <cline><area correct="yes">name = input('Enter your name")</area></cline>
+      <cline><area correct="yes">print("Nice to meet you,",name</area></cline>
+    </areas>
+    <feedback>
+      <p>
+        Remember, proper formatting and syntax rules.
+      </p>
+    </feedback>
+  </exercise>
+
+
+  <exercise label="clickable-error2">
+    <statement>
+      <p>
+        Identify the problematic statements in this Python code.
+      </p>
+    </statement>
+    <areas language="python">
+      <cline><area correct="yes">first name =  input("Enter your name")</area></cline>
+      <cline><area correct="no">print("Nice to meet you,", first_name)</area></cline>
+    </areas>
+    <feedback>
+      <p>
+        Remember, proper formatting and syntax rules.
+      </p>
+    </feedback>
+  </exercise>
+
+  <exercise label="clickable-error3">
+    <statement>
+      <p>
+        Identify the problematic statements in this Python code.
+      </p>
+    </statement>
+    <areas language="python">
+      <cline><area correct="no">bill = float(input("Enter your bill amount"))</area></cline>
+      <cline><area correct="no">tax = float(input("Enter your tax percentage"))</area></cline>
+      <cline><area correct="no">tip = float(input("Enter your tip percentage"))</area></cline>
+      <cline><area correct="yes">total = bill * tax * tip</area></cline>
+
+      <cline><area correct="no">print("your total amount is " + "$" + str(total)) </area></cline>
+
+    </areas>
+    <feedback>
+      <p>
+        Remember, that if your program depends on using a formula to perform a calculation, it is your responsibility to ensure the formula is correct. The program will do what we tell it to do whether it is logical or not.
+      </p>
+    </feedback>
+  </exercise>
+
+  <exercise label="ac_errors_1">
+  <statement>
+   Update this program to run successfully and displays the message "Nice to meet you, [name]" where [name] is the name entered by the user.
+  </statement> 
+ 
+ <program xml:id="ac_errors_1"  interactive="activecode" language="python">
+   <input>
+name = input('Enter your name")
+print("Nice to meet you,",name
+   </input>
+   <tests>
+    from unittest.gui import TestCaseGui
+
+    class MyTests(TestCaseGui):
+      def testOne(self):
+        self.assertTrue(self.getOutput().strip().startswith("Nice to meet you, "),"The expected output is 'Nice to meet you, ' followed by the name entered.")
+    
+    MyTests().main()
+
+   </tests>
+ 
+ </program>
+ </exercise>
+
+  <exercise label="ac_errors_2">
+  <statement>
+   Update this program to run successfully and displays the message "Nice to meet you, [name]" where [name] is the name entered by the user.
+  </statement> 
+ 
+ <program xml:id="ac_errors_2"  interactive="activecode" language="python">
+   <input>
+first name =  input("Enter your name")
+print("Nice to meet you,", first_name)
+   </input>
+   <tests>
+    from unittest.gui import TestCaseGui
+
+    class MyTests(TestCaseGui):
+      def testOne(self):
+        self.assertTrue('first_name = ' in self.getEditorText() , "Fixed syntax error in variable name.")
+        self.assertTrue(self.getOutput().strip().startswith("Nice to meet you, "),"The expected output is 'Nice to meet you, ' followed by the name entered.")
+    
+    MyTests().main()
+
+   </tests>
+ 
+ </program>
+ </exercise>
+
+  <exercise label="ac_errors_3">
+  <statement>
+   Update this program to calculate the total amount correctly. The test case will pass if the total is calculated correctly when the user enters a bill amount of 10, tax percentage of 0.07, and tip percentage of 0.2.
+  </statement> 
+ 
+ <program xml:id="ac_errors_3"  interactive="activecode" language="python">
+   <input>
+bill = float(input("Enter your bill amount"))
+tax = float(input("Enter your tax percentage"))
+tip = float(input("Enter your tip percentage"))
+total = Bill + bill * tax * tip
+print("your total amount is " + "$" + str(total))
+   </input>
+   <tests>
+    from unittest.gui import TestCaseGui
+    import StringIO
+    import sys
+    class MyTests(TestCaseGui):
+      def testOne(self):
+        #sys.stdin = StringIO.StringIO("10 .07 0.2\n")  # Simulate user input for bill, tax, and tip
+        self.assertTrue(self.getOutput().strip().lower() == "your total amount is $12.7","Test with 10 bill, 7% tax, and 20% tip.")
+    
+    MyTests().main()
+
+   </tests>
+ 
+ </program>
+ </exercise>
+</exercises>

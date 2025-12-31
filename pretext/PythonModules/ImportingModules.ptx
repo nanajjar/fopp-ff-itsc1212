@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<section xml:id="python-modules_import">
+ 
+ <title>Syntax for Importing Modules</title>
+    When you see imported modules in a Python program, there are a few variations that have slightly different consequences.
+
+<ol><li><p>The most common is <c>import morecode</c>. That imports everything in morecode.py.
+   To invoke a function <c>f1</c> that is defined in <c>morecode.py</c>, you would write <c>morecode.f1()</c>. 
+   Note that you have to explicitly mention morecode again, to specify that you want the f1 function from the morecode namespace. 
+   If you just write <c>f1()</c>, python will look for an f1 that was defined in the current file, rather than in <c>morecode.py</c>.</p></li>
+
+<li><p>You can also give the imported module an alias (a different name, just for when you use it in your program). For example, after executing <c>import morecode as mc</c>, you would invoke <c>f1</c> as <c>mc.f1()</c>. 
+  You have now given the morecode module the alias mc. Programmers often do this to make code easier to type.</p></li>
+
+<li><p>A third possibility for importing occurs when you only want to import SOME of the functionality from a module, and you want to make those objects be part of the current module's namespace. 
+  For example, you could write <c>from morecode import f1</c>. Then you could invoke f1 without referencing morecode again: <c>f1()</c>.</p></li>
+</ol>
+
+<note>
+  <title>Note: Python modules and limitations with activecode</title>
+  <p>Throughout the chapters of this book, activecode windows allow you to practice the Python that you are learning.
+              We mentioned in the first chapter that programming is normally done using some type of development
+              environment and that the
+              activecode used here was strictly to help us learn.  It is not the way we write production programs.</p>
+  <p>To that end, it is necessary to mention that many of the  modules available in standard Python
+              will <term>not</term> work in the activecode environment.  In fact, only math and random have been
+              completely ported at this point.  If you wish to explore any
+              additional modules, you will need to also explore using a more robust development environment.</p>
+</note>
+
+   <term>Check your understanding</term>
+  <exercise label="mc_modules_3">
+    <statement>
+      <p>True / False:  All standard Python modules will work in activecode.</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>True</p>
+        </statement>
+        <feedback>
+                    Only math, and random have been ported to work in activecode at this time.
+                </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>False</p>
+        </statement>
+        <feedback>
+                    Only math, and random have been ported to work in activecode at this time.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>

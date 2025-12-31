@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<section xml:id="front-back-matter_foreword">
+    <title>Foreword to the Functions First Edition</title>
+    <p>By Nadia Najjar</p>
+
+    <p>
+        This second edition is a revision that incorporates the functions-first changes developed
+        from the same original textbook, How to Think Like a Computer Scientist. Both the first
+        edition of this book and the functions-first version originated from that shared foundation;
+        this edition brings those efforts together into a single, unified revision.
+    </p>
+    <p>
+        This version of the book is specifically designed to align with the topics and learning
+        objectives of ITSC 1212 - Introduction to Computer Science 1 at the University of North Carolina at Charlotte. 
+        Our goal is to provide an integrated learning experience that supports the course objectives while remaining
+        accessible to students with no prior experience in computer science.
+    </p>
+
+    <p>
+        Incorporating the functions-first organization, this edition introduces functions early and
+        uses them consistently as a framework for expressing computation. Functions are presented as
+        a way to describe how inputs are transformed into outputs, supporting core computational
+        thinking practices such as abstraction, decomposition, and reasoning about program behavior.
+    </p>
+
+    <p>
+        Released for the Spring 2026 semester, this edition will continue to evolve in future
+        offerings to further strengthen the alignment between computational thinking and programming
+        concepts. This project is supported by the College of Computing and Informatics at UNC
+        Charlotte, which provides the resources and institutional backing for this work.
+    </p>
+</section>

@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<section xml:id="strings_string-methods">
+  <title>String Methods</title>
+  <p>We previously used a few functions like <c>print()</c> and <c>len()</c> where we place the variable inside the parentheses such as <c>len(my_str)</c>. On the other hand, a <b>method</b> is a function that is attached to a specific Python object. 
+    To access this function, we write the object, then a dot <c>.</c>, and then the name of the method.   The "dot notation" is the way we connect the name of an object to the name of a method
+    it can perform. For example, we can write <c>my_str.upper()</c> when we want the string <c>my_str</c> to perform the <c>upper()</c> method to create an upper-case version of itself.</p>
+
+
+  <p>Remember that strings are <term> immutable</term>. Therefore, all string methods give us a new string and must be assigned to a new variable. The original string is unchanged.</p>
+
+  <program xml:id="ac_stringMethods_1" label="ac_stringMethods_1" interactive="activecode" language="python">
+    <input>
+my_str = "Hello, World"
+my_str.upper()
+print(my_str) # my_str is unchanged! 
+print(my_str.upper()) #Gives us the new string, we can print it or assign it to a variable
+my_new_str = my_str.upper()
+print(my_new_str)
+  </input>
+  </program>
+  <p>In this example, <c>upper</c> is a method that can be invoked on any string object
+            to create a new string in which all the
+            characters are in uppercase. </p>
+  <p>In addition to <c>upper</c>, the following table provides some useful string methods.</p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
+                            Method
+                        </cell>
+        <cell>
+                            Parameters
+                        </cell>
+        <cell>
+                            Description
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            upper
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string in all uppercase
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            lower
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string in all lowercase
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            count
+                        </cell>
+        <cell>
+                            item
+                        </cell>
+        <cell>
+                            Returns the number of occurrences of item
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            replace
+                        </cell>
+        <cell>
+                            old, new
+                        </cell>
+        <cell>
+                            Replaces all occurrences of old substring with new
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            index
+                        </cell>
+        <cell>
+                            item
+                        </cell>
+        <cell>
+                            Returns the leftmost index where the substring item is found, or error if not found
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            strip
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+          Returns a string with the leading and trailing whitespace (e.g.,space, tab, new line) removed 
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            lstrip
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string with the leading whitespace removed
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            rstrip
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string with the trailing whitespace removed
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            split
+                        </cell>
+        <cell>
+                            optional string as separator
+                        </cell>
+        <cell>
+          Breaks up the string into a list of individual words/strings </cell>
+      </row>
+    </tabular>
+  </table>
+
+  <p>You should experiment with these
+            methods so that you understand what they do.  Note once again that the methods that return strings do <em>not</em>
+            change the original. You can also consult the <url href="https://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation for strings</url> for a more comprehensive list of string methods and their descriptions. </p>
+  <program xml:id="ac_stringMethods_2" label="ac_stringMethods_2" interactive="activecode" language="python">
+    <input>
+ss = "Hello, World"
+
+els = ss.count("l")
+print(els)
+
+news = ss.replace("o", "***")
+print(news)
+
+food = "banana Bread"
+print(food.lower())
+print(food.index("e"))
+print(food.index("na")) #finds the index of the first occurence of "na"
+print(food.index("b")) 
+print(food.index("B")) #remember that python is case sensitive! 
+        </input>
+  </program>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise label="mc_stringMethods_1">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+s = "python rocks"
+print(s.count("o") + s.count("p"))
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>0</p>
+        </statement>
+        <feedback>
+                    There are definitely o and p characters.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2</p>
+        </statement>
+        <feedback>
+                    There are 2 o characters but what about p?
+                </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>3</p>
+        </statement>
+        <feedback>
+                    Yes, add the number of o characters and the number of p characters.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="mc_stringMethods_2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+s = "python rocks"
+print(s[1] * s.index("n"))
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>yyyyy</p>
+        </statement>
+        <feedback>
+                    Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the index method has precedence over the repetition operator.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>55555</p>
+        </statement>
+        <feedback>
+                    Close.  5 is not repeated, it is the number of times to repeat.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>n</p>
+        </statement>
+        <feedback>
+                    This expression uses the index of n
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error, you cannot combine all those things together.</p>
+        </statement>
+        <feedback>
+                    This is fine, the repetition operator used the result of indexing and the index method.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+  <p>
+    Two of the most useful methods on strings involve lists of strings. 
+    The split method breaks a string into a list of words. 
+    By default, any number of whitespace characters is considered a word boundary.
+    <image source="Files/Figures/split.png" width="40%" alt="splitting a string using the default word boundry (space)"/>
+
+    
+  </p>
+  <program xml:id="ac_stringMethods_split_1" label="ac_stringMethods_split_1" interactive="activecode" language="python">
+    <input>
+      song = "The rain in Spain..."
+      wds = song.split()
+      print(wds)
+  </input>
+  </program>
+  <p>
+    An optional argument called a delimiter can be used to specify which characters to use as word boundaries.
+    <image source="Files/Figures/split2.png" width="40%" alt="splitting a string using a custom word boundry"/>
+
+  </p>
+  <program xml:id="ac_stringMethods_split_2" label="ac_stringMethods_split_2" interactive="activecode" language="python">
+    <input>
+      song = "The rain in Spain..."
+      wds = song.split('ai')
+      print(wds)
+  </input>
+  </program>
+  <p>
+    Notice that the delimiter doesn't appear in the result.
+The inverse of the split method is join. 
+You choose a desired separator string, (often called the glue) and join the list with the glue between each of the elements.
+<image source="Files/Figures/join.png" width="40%" alt="joining list elements into a string"/>
+  
+</p>
+<program xml:id="ac_stringMethods_join_1" label="ac_stringMethods_join_1" interactive="activecode" language="python">
+  <input>
+    wds = ["red", "blue", "green"]
+    glue = ';'
+    s = glue.join(wds) 
+    print(s)
+    print(wds)
+    
+    print("***".join(wds))
+    print("".join(wds))
+    
+</input>
+</program>
+<p>
+  The list that you glue together (wds in this example) is not modified. Also, you can use empty glue or multi-character strings as glue.
+
+Check your understanding
+</p>
+
+<exercise label="ca_stringMethods1">
+  <statement>
+   <p>Create a variable called <c>words</c> and assign to it a list whose elements are the words in the string <c>str1</c>.
+    </p>
+  </statement>
+  <program xml:id="ac_stringMethods1" label="ac_stringMethods1" interactive="activecode" language="python">
+    <input>
+      str1 = "OH THE PLACES YOU'LL GO"
+    </input>
+     <tests>
+from unittest.gui import TestCaseGui
+    
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue('words' in self.getEditorText(), "Testing that you are using the specified variable name 'words'.")
+    self.assertTrue(len(words) == 5 , "testing the length of the list is correct .")
+    self.assertTrue('str1.split()' in self.getEditorText()  , "Testing that you are using split method.")
+MyTests().main()
+        
+       </tests>
+    
+  </program>
+</exercise>
+<exercise label="ca_stringMethods2">
+  <statement>
+    <p>Create a variable called <c>emotions</c> and assign to it a list whose elements are the words in the string <c>str1</c>.
+    </p>
+  </statement>
+<program xml:id="ac_stringMethods2" label="ac_stringMethods2" interactive="activecode" language="python" >
+  <input>
+    str1 = "excited,eager,thrilled,delighted"
+
+  </input>
+   <tests>
+from unittest.gui import TestCaseGui
+  
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue('emotions' in self.getEditorText(), "Testing that you are using the specified variable name 'emotions'.")
+    self.assertTrue(len(emotions) == 4 , "testing the length of the list is correct .")
+    self.assertTrue('str1.split(",")' in self.getEditorText() or "str1.split(',')" in self.getEditorText()  , "Testing that you are using split method.")
+MyTests().main()
+      
+     </tests>
+  
+</program>
+</exercise>
+</section>

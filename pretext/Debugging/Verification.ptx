@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<section id="verification">
+    <title>Verifying Code</title>
+    <p>Once we have written the program, we need to verify that the program works. There are many, many different
+     ways to accomplish this task, but for the purposes of this textbook it will be easiest to run the program with different values and verify that 
+     the result is correct each time. If at any point the result is not correct, then we know there is something wrong
+     within the program. </p>
+     <p>Let's look at an example program and test it to ensure it's working properly.
+         NOTE: In the following programs the initial numbers will be defined as str type instead of int for the
+         sake of demonstration.</p>
+    <program xml:id="ac_verifyingCode_1" label="ac_verifyingCode_1" language="python" interactive="activecode">
+    <input>
+        first_num = "1"
+        second_num = "1"
+
+        first_num = int(first_num) # input() returns str type, convert to int
+        second_num = int(second_num) 
+
+        sum_of = first_num + second_num
+        print("The sum is:", sum_of)
+    </input>
+    </program>
+    <p>As you can see, 1 and 1 resulted in 2. However, it's not good practice to 
+    only check it with one combination of values. Let's run it a few more times with other values 
+    to ensure it works properly.</p>
+    <program xml:id="ac_verifyingCode_2" label="ac_verifyingCode_2" language="python" interactive="activecode">
+        <input>
+            first_num = "3"
+            second_num = "5"
+
+            first_num = int(first_num) # input() returns str type, convert to int
+            second_num = int(second_num) 
+
+            sum_of = first_num + second_num
+            print("The sum is:", sum_of)
+        </input>
+    </program>
+    <p>We got 8, looks like it works perfectly. Let's try it one more time with another set of values.</p>
+    <program xml:id="ac_verifyingCode_3" label="ac_verifyingCode_3" language="python" interactive="activecode">
+    <input>
+        first_num = "12.5"
+        second_num = "20"
+
+        first_num = int(first_num) # input() returns str type, convert to int
+        second_num = int(second_num) 
+
+        sum_of = first_num + second_num
+        print("The sum is:", sum_of)
+    </input>
+    </program>
+    <p>Good thing we checked with a decimal! With this set of numbers, a ValueError occured because the program is trying 
+    to convert the string to integer, but can't due to the decimal. To address this issue, the conversion can be changed 
+    from integer to float.</p>
+    <program xml:id="ac_verifyingCode_4" label="ac_verifyingCode_4" language="python" interactive="activecode">
+    <input>
+        first_num = "12.5"
+        second_num = "20"
+
+        first_num = float(first_num) # input() returns str type, convert to float
+        second_num = float(second_num) 
+
+        sum_of = first_num + second_num
+        print("The sum is:", sum_of)
+    </input>
+    </program>
+    <p>Looks like our program even works with decimal numbers now. Remember to double check your program with multiple 
+    sets of input to ensure it works properly. If we had stopped after checking that 1 + 1 worked we would not have noticed
+    that the program didn't work with decimals here.</p>
+</section>

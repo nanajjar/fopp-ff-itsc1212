@@ -1,0 +1,12 @@
+
+if (allTraceData === undefined) {
+    var allTraceData = {};
+}
+(function() { // IIFE to avoid variable collision
+    let codelensID = "rs-clens2_13_1";  //fallback
+    let partnerCodelens = document.currentScript.parentElement.querySelector(".pytutorVisualizer");
+    if (partnerCodelens) {
+        codelensID = partnerCodelens.id;
+    }
+    allTraceData[codelensID] = {"code": "a = 5\nb = a    # after executing this line, a and b are now equal\nprint(a,b)\na = 3    # after executing this line, a and b are no longer equal\nprint(a,b)\n", "trace": [{"line": 1, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"a": 5}, "ordered_globals": ["a"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"a": 5, "b": 5}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"a": 5, "b": 5}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": "5 5\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"a": 3, "b": 5}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": "5 5\n"}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"a": 3, "b": 5}, "ordered_globals": ["a", "b"], "stack_to_render": [], "heap": {}, "stdout": "5 5\n3 5\n"}], "startingInstruction": 0};
+})();

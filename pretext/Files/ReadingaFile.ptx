@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<section xml:id="files_reading-a-file">
+  <title>Reading a File</title>
+  <p>As an example, suppose we have a text file called <c>olympics.txt</c> that contains
+            the data representing about olympians across different years.</p>
+  <p>To open this file, we would call the <c>open</c> function. The variable,
+            <c>fileref</c>, now holds a reference to the file object returned by
+            <c>open</c>. When we are finished with the file, we can close it by using
+            the <c>close</c> method. After the file is closed any further attempts to
+            use <c>fileref</c> will result in an error.</p>
+  <program xml:id="ac11_2_1" language="python">
+    <input>
+fileref = open("olympics.txt", "r")
+## other code here that refers to variable fileref
+fileref.close()
+        </input>
+  </program>
+  <note>
+    <p>A common mistake is to get confused about whether you are providing a variable name or a string literal as an input to the open function. In the code above, <q>olympics.txt</q> is a string literal that should correspond to the name of a file on your computer. If you put something without quotes, like <c>open(x, "r")</c>, it will be treated as a variable name. In this example, x should be a variable that's already been bound to a string value like <q>olympics.txt</q>.</p>
+  </note>
+</section>

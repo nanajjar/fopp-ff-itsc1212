@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<exercises xml:id="selection_exercises">
+  <title>Drill and Practice</title>
+  <exercise label="pz_branching_1">
+    <statement>
+      <p>What do these expressions evaluate to?</p>
+      <p>
+        <ol marker="1">
+          <li>
+            <p>
+              <c>3 == 3</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>3 != 3</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>3 &gt;= 4</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>not (3 &lt; 4)</c>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="pz_branching_1_program" label="pz_branching_1_program_1">
+      <input>
+
+        </input>
+    </program>
+    <solution>
+                    
+                        
+                            True
+                        
+                        
+                            False
+                        
+                        
+                            False
+                        
+                        
+                            False
+                        
+                    
+                
+                    <p><ol marker="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
+                </solution>
+  </exercise>
+  <exercise label="pz_branching_2">
+    <statement>
+      <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator.</p>
+      <p>
+        <ol marker="1">
+          <li>
+            <p>
+              <c>a &gt; b</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>a &gt;= b</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>a &gt;= 18  and  day == 3</c>
+            </p>
+          </li>
+          <li>
+            <p>
+              <c>a &gt;= 18  or  day != 3</c>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <program xml:id="pz_branching_2" label="pz_branching_2_program_2" interactive="activecode" language="python">
+      <input>
+
+        </input>
+    </program>
+  </exercise>
+  <exercise label="pz_branching_3">
+    <statement>
+      <p>Write code that takes an exam mark and prints a string &#x2014; the grade for that mark &#x2014; according to this
+                        scheme:</p>
+      <table>
+        <tabular>
+          <row header="yes">
+            <cell>
+                                        Mark
+                                    </cell>
+            <cell>
+                                        Grade
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        &gt;= 90
+                                    </cell>
+            <cell>
+                                        A
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        [80-90]
+                                    </cell>
+            <cell>
+                                        B
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        [70-80]
+                                    </cell>
+            <cell>
+                                        C
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        [60-70]
+                                    </cell>
+            <cell>
+                                        D
+                                    </cell>
+          </row>
+          <row>
+            <cell>
+                                        &lt; 60
+                                    </cell>
+            <cell>
+                                        F
+                                    </cell>
+          </row>
+        </tabular>
+      </table>
+      <p>The square and round brackets denote closed and open intervals.
+                        A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.</p>
+      <p>Test your code by printing the mark and the grade for a number of different marks.</p>
+    </statement>
+  </exercise>
+
+  <exercise label="pz_branching_4">
+    <statement>
+      <p>Write code that takes an integer and prints <c>True</c> if the integer is an <term>even number</term> and <c>False</c> if
+                        it is <term>odd</term>.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="pz_branching_4" label="pz_branching_4_program_4">
+      <input># your code here
+        </input>
+    </program>
+  </exercise>
+ 
+  
+  
+  <exercise label="pz_branching_5">
+    <statement>
+      <p>Implement the calculator for the date of Easter.</p>
+      <p>The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.</p>
+      <p>Ask the user to enter a year.
+                        Compute the following:</p>
+      <blockquote>
+        <p>
+          <ol marker="1">
+            <li>
+              <p>a = year % 19</p>
+            </li>
+            <li>
+              <p>b = year % 4</p>
+            </li>
+            <li>
+              <p>c = year % 7</p>
+            </li>
+            <li>
+              <p>d = (19 * a + 24) % 30</p>
+            </li>
+            <li>
+              <p>e = (2 * b + 4 * c + 6 * d + 5) % 7</p>
+            </li>
+            <li>
+              <p>dateofeaster = 22 + d + e</p>
+            </li>
+          </ol>
+        </p>
+      </blockquote>
+      <p>Special note: The algorithm can give a date in April.  Also, if the year is one of four special
+                        years (1954, 1981, 2049, or 2076) then subtract 7 from the date.</p>
+      <p>Your program should print an error message if the user provides a date that is out of range.</p>
+    </statement>
+    <program interactive="activecode" language="python" xml:id="pz_branching_5" label="pz_branching_5_program_5">
+      <input>
+
+        </input>
+    </program>
+    <solution>
+      <program xml:id="answer_ex_6_13" language="python">
+        <input>
+year = int(input("Please enter a year"))
+if year &gt;= 1900 and year &lt;= 2099:
+    a = year % 19
+    b = year % 4
+    c = year % 7
+    d = (19*a + 24) % 30
+    e = (2*b + 4*c + 6*d + 5) % 7
+    dateofeaster = 22 + d + e
+
+    if year == 1954 or year == 2981 or year == 2049 or year == 2076:
+        dateofeaster = dateofeaster - 7
+
+    if dateofeaster &gt; 31:
+        print("April", dateofeaster - 31)
+    else:
+        print("March", dateofeaster)
+else:
+    print("ERROR...year out of range")
+        </input>
+      </program>
+    </solution>
+  </exercise>
+</exercises>
