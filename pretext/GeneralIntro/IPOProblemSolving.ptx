@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<section xml:id="sec-ipo-problem-solving">
+  <title>Computational Problem Solving and the IPO Model</title>
+
+  <p>
+    The basic building blocks of programs—input, output, computation, conditional
+    execution, and repetition—describe the kinds of instructions that appear in nearly
+    every programming language. While these instructions tell us <em>what</em> programs
+    can do, we still need a way to organize them into a coherent plan for solving a
+    problem.
+  </p>
+
+  <p>
+    When we solve problems using a computer, we are not just writing code—we are
+    designing a process that transforms information into a result. One simple and
+    powerful way to structure this process is the
+    <term>Input–Process–Output (IPO)</term> model.
+  </p>
+
+  <ul>
+    <li><em>Input</em>: What information does the program need?</li>
+    <li><em>Process</em>: What computations or steps are performed on that information?</li>
+    <li><em>Output</em>: What result should the program produce?</li>
+  </ul>
+
+
+  <p>
+     Every program you write, no matter how small or large, can be understood in terms
+    of these three components. Even a single line of code often follows this model.
+ Seen this way, the IPO model does not replace the program building blocks—it
+    organizes them. Each block plays a role in transforming inputs into outputs through
+    a sequence of well-defined steps.
+  </p>
+
+  <p>
+    As programs grow more complex, this organization becomes increasingly important.
+    By using IPO to guide problem solving, we can break large tasks into smaller subtasks,
+    each of which follows the same input-process-output pattern. Functions are a natural
+    way to represent these subtasks, allowing us to combine simple building blocks into
+    larger solutions.
+  </p>
+  <p>
+ A common challenge for beginners in computational problem solving is translating a problem description 
+  into an actionable plan. Before writing code, you can ask what inputs are required, what processing must
+    occur, and what output should be produced. Thinking in this way separates
+    <em>what</em> the program should do from <em>how</em> it is implemented.
+  </p>
+</section>

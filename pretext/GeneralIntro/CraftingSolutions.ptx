@@ -2,13 +2,11 @@
 <section xml:id="general-intro_ct">
   <title>Crafting Solutions</title>
 <p>
-
-<term>
-</term>
-
-Computational problem solving involves breaking down complex problems into manageable steps to develop efficient solutions. 
-Flowcharts and pseudocode are two powerful tools that can greatly assist in this process. 
+Computational problem solving involves breaking complex problems into manageable steps and organizing those steps into a clear plan. 
+After identifying the inputs, processing, and outputs using the IPO model, the next task is to determine how the processing unfolds: what happens first, what decisions are made along the way, and what actions may repeat. 
+Flowcharts and pseudocode provide two complementary ways to represent this logic, helping us visualize and describe a solution before translating it into code.
 </p>
+
     <video xml:id="XDWw4Ltfy5w" youtube="XDWw4Ltfy5w" width="auto"/>
 <p><term>Flowcharts</term> are visual representations of the steps involved in solving a problem.  They help us see the big picture.
 
