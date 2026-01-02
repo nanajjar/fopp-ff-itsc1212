@@ -17,5 +17,5 @@
         <xi:include href='./SplitandJoin.ptx' /> -->
                 <xi:include href="./Glossary.ptx"/>
         <xi:include href='./Exercises.ptx' />
-        <xi:include href='./week2a1.ptx' />
+        <!-- <xi:include href='./week2a1.ptx' /> -->
     </chapter>

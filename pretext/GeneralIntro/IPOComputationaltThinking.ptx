@@ -3,42 +3,43 @@
  
     <title>Computational Thinking Through the IPO Lens</title>
 
-  <p>
-    The IPO model also supports the development of
-    <term>computational thinking</term>, a collection of problem-solving skills that
-    guide how programs are designed and reasoned about.
+ <p>
+    Earlier in the course, we introduced <term>computational thinking</term> as a set of
+    problem-solving skills that help you design programs and understand how they work.
+    The <term>Input-Process-Output (IPO)</term> model gives you a simple and practical way
+    to apply those skills when working through programming problems.
   </p>
 
   <p>
-    <em>Decomposition</em> involves breaking a problem into smaller pieces. Large
-    problems can often be decomposed into smaller IPO units, each with its own inputs,
-    processing steps, and outputs. Functions are a common way to represent these units.
+    One key computational thinking skill is <em>decomposition</em>. Using IPO makes this
+    easier by encouraging you to break a large problem into smaller pieces, each with
+    its own inputs, processing steps, and outputs. These smaller pieces often become
+    functions in your programs.
+  </p>
+  
+    <p>
+    <em>Abstraction</em> is about focusing on the big picture instead of every detail.
+    When you describe a part of a program using only its inputs and outputs, you can
+    understand what it does without worrying about how it works internally.
   </p>
 
   <p>
-    <em>Abstraction</em> focuses attention on what a component does rather than how it
-    does it. By describing a function in terms of its inputs and outputs, the details
-    of the process can be temporarily hidden, allowing the program to be understood at
-    a higher level.
+    <em>Pattern recognition</em> develops as you solve more problems. You may notice that
+    many tasks—such as converting units, analyzing data, or running simulations—follow
+    similar IPO patterns. Recognizing these patterns can save time and make problem
+    solving easier.
   </p>
 
   <p>
-    <em>Pattern recognition</em> helps identify similarities across problems. Many tasks,
-    such as data analysis, unit conversion, or simulation, share common IPO structures.
-    Recognizing these patterns makes it easier to reuse ideas and solutions.
+    <em>Algorithmic thinking</em> shows up most clearly in the <em>process</em> part of IPO.
+    This is where you decide the order of steps needed to turn inputs into outputs.
+    Tracing program execution and debugging both rely on understanding these steps.
   </p>
 
   <p>
-    <em>Algorithmic thinking</em> is most visible in the <em>process</em> part of IPO.
-    It involves defining clear, ordered steps that transform inputs into outputs.
-    Tracing execution and debugging both rely on understanding how these steps are
-    carried out.
-  </p>
-
-  <p>
-    Connecting computational problem solving to the IPO model provides a consistent
-    framework for designing programs, tracing execution, and debugging errors.
-    Throughout this course, the IPO model will be used—sometimes explicitly and
-    sometimes implicitly—to support problem solving and reasoning about code.
+    By connecting computational thinking to the IPO model, you gain a consistent way to
+    plan programs, follow how they run, and figure out what went wrong when something does
+    not work as expected. Throughout this course, IPO will continue to serve as a helpful
+    guide for solving problems, even when we are not explicitly talking about it.
   </p>
 </section>

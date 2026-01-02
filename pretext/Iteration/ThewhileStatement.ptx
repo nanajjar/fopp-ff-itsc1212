@@ -1,7 +1,15 @@
 <?xml version="1.0"?>
 <section xml:id="more-about-iteration_the-while-statement">
   <title>The <c>while</c> Statement</title>
-  <p>There is another Python statement that can also be used to build an iteration. It is called the <c>while</c> statement.
+     <p> A basic building block of all programs is to be able to repeat some code over and over
+        again. We refer to this repetitive idea as <b>iteration</b>. In this section, we will
+        explore some mechanisms for basic iteration. </p>
+    <p> In Python, the <b>for</b> statement allows us to write programs that implement iteration. As
+        a simple example, let's say we have some friends, and we'd like to send them each an email
+        inviting them to our party. We don't quite know how to send email yet, so for the moment
+        we'll just print a message for each friend. </p>
+        <p>
+          In addition to conditional execution, Python also supports repetition—running the same code multiple times—using the <c>while</c> statement.
             The <c>while</c> statement provides a much more general mechanism for iterating. Similar to the <c>if</c> statement, it uses
             a boolean expression to control the flow of execution. The body of while will be repeated as long as the controlling
             boolean expression evaluates to <c>True</c>.</p>

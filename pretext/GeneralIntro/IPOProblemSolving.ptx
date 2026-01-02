@@ -3,15 +3,15 @@
   <title>Computational Problem Solving and the IPO Model</title>
 
   <p>
-    The basic building blocks of programs—input, output, computation, conditional
-    execution, and repetition—describe the kinds of instructions that appear in nearly
+    The basic building blocks of programs (input, output, computation, conditional
+    execution, and repetition) describe the kinds of instructions that appear in nearly
     every programming language. While these instructions tell us <em>what</em> programs
     can do, we still need a way to organize them into a coherent plan for solving a
     problem.
   </p>
 
   <p>
-    When we solve problems using a computer, we are not just writing code—we are
+    When we solve problems using a computer, we are not just writing code, we are
     designing a process that transforms information into a result. One simple and
     powerful way to structure this process is the
     <term>Input–Process–Output (IPO)</term> model.
@@ -23,11 +23,12 @@
     <li><em>Output</em>: What result should the program produce?</li>
   </ul>
 
+<image source="GeneralIntro/Figures/ipo.png"  alt="flowchart symbols"/>
 
   <p>
      Every program you write, no matter how small or large, can be understood in terms
     of these three components. Even a single line of code often follows this model.
- Seen this way, the IPO model does not replace the program building blocks—it
+ Seen this way, the IPO model does not replace the program building blocks, it
     organizes them. Each block plays a role in transforming inputs into outputs through
     a sequence of well-defined steps.
   </p>

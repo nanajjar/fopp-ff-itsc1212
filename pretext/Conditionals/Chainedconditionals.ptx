@@ -186,34 +186,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="ac5_9_2">
-    <statement>
-      <p>Create one conditional to find whether <q>false</q> is in string <c>str1</c>. If so, assign
-        variable <c>output</c> the string <q>False. You aren't you?</q>. Check to see if <q>true</q>
-        is in string <c>str1</c> and if it is then assign <q>True! You are you!</q> to the variable <c>
-        output</c>. If neither are in <c>str1</c>, assign <q>Neither true nor false!</q> to <c>
-        output</c>.</p>
-    </statement>
-    <program xml:id="ac7_9_2_editor" interactive="activecode" language="python">
-      <input>
-        str1 = "Today you are you! That is truer than true! There is no one alive who is you-er than
-        you!"
 
-        =====
-
-        from unittest.gui import TestCaseGui
-
-        class myTests(TestCaseGui):
-
-          def testThree(self):
-            self.assertEqual(output, "True! You are you!", "Testing that output has the correct value, given the str1 provided.")
-            self.assertIn("else", self.getEditorText(), "Testing output (Don't worry about actual and expected values).")
-            self.assertIn("elif", self.getEditorText(), "Testing output (Don't worry about actual and expected values).")
-
-        myTests().main()
-      </input>
-    </program>
-  </exercise>
   <!-- <exercise label="ac7_9_4">
     <statement>
       <p>Create an empty list called <c>resps</c>. Using the list <c>percent_rain</c>, for each percent,

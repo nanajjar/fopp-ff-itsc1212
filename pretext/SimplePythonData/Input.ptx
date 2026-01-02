@@ -1,49 +1,56 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_input">
   <title>Input</title>
-  <!--<video xml:id="inputvid" youtube="2KYixkCBXSQ" width="auto"/>-->
-  <p>
-    The program in section <xref ref="simple-python-data_operators-and-operands" /> for conversion from seconds, to hours, minutes and seconds demonstrated how to use the print function to produce output.
-    The program in the previous section works fine but is very limited in that it only works with one value for <c>total_secs</c>.  What if we wanted to rewrite the program so that it was more general.  One thing we could
-            do is allow the user to enter any value they wish for the number of seconds.  The program could then print the
-            proper result for that starting value.</p>
-  <p>In order to do this, we need a way to get <term>input</term> from the user.  Luckily, in Python
-            there is a built-in function to accomplish this task.  As you might expect, it is called <c>input</c>.</p>
+  <!--<video
+  xml:id="inputvid" youtube="2KYixkCBXSQ" width="auto"/>-->
+  <p> The program in section <xref ref="simple-python-data_operators-and-operands" /> for conversion
+    from seconds, to hours, minutes and seconds demonstrated how to use the print function to
+    produce output. The program in the previous section works fine but is very limited in that it
+    only works with one value for <c>total_secs</c>. What if we wanted to rewrite the program so
+    that it was more general. One thing we could do is allow the user to enter any value they wish
+    for the number of seconds. The program could then print the proper result for that starting
+    value.</p>
+  <p>In order to do this, we need a way to get <term>input</term> from the user. Luckily, in Python
+    there is a built-in function to accomplish this task. As you might expect, it is called <c>input</c>
+    .</p>
   <program language="python">
     <input>
       n = input("Please enter your name: ")
     </input>
   </program>
-  <p>The input function allows the user to provide a <term>prompt string</term>.  When the function is evaluated, the prompt is
-            shown.
-            The user of the program can enter the name and press <title_reference>return</title_reference>. When this
-            happens the text that has been entered is returned from the <title_reference>input</title_reference> function,
-            and in this case assigned to the variable <title_reference>n</title_reference>.  Make sure you run this example a number
-            of times and try some different names in the input box that appears.</p>
+  <p>The input function allows the user to provide a <term>prompt string</term>. When the function
+    is evaluated, the prompt is shown. The user of the program can enter the name and press <title_reference>
+    return</title_reference>. When this happens the text that has been entered is returned from the <title_reference>
+    input</title_reference> function, and in this case assigned to the variable <title_reference>n</title_reference>.
+    Make sure you run this example a number of times and try some different names in the input box
+    that appears.</p>
   <program xml:id="ac_input_1" label="ac_input_1" interactive="activecode" language="python">
     <input>
-n = input("Please enter your name: ")
-print("Hello", n)
-        </input>
+      n = input("Please enter your name: ")
+      print("Hello", n)
+    </input>
   </program>
-  <p>It is very important to note that the <c>input</c> function <strong>always</strong> returns a string value.  Even if you asked the user to enter their age, you would get back a string like
-            <c>"17"</c>.</p>
+  <p>It is very important to note that the <c>input</c> function <strong>always</strong> returns a
+    string value. Even if you asked the user to enter their age, you would get back a string like <c>
+    "17"</c>.</p>
 
-            <p>For example, enter the characters<em>17</em> or any integer as the input in the code block below and see its type</p>
+  <p>For example, enter the characters<em>17</em> or any integer as the input in the code block
+    below and see its type</p>
 
-            <program xml:id="ac_input_2" label="ac_input_2" interactive="activecode" language="python">
-              <input>
-                m = input("Please enter 17 or any integer: ")
-                print(m)
-                print(type(m))
-              </input>
-            </program>
-  <p>As seen above, even though an integer was given as the input, it was converted into a string. 
+  <program xml:id="ac_input_2" label="ac_input_2" interactive="activecode" language="python">
+    <input>
+      m = input("Please enter 17 or any integer: ")
+      print(m)
+      print(type(m))
+    </input>
+  </program>
+  <!-- <p>As seen above, even though an integer was given as the input, it was converted into a
+  string. 
     It would be your job, as the programmer, to convert that string into
             an int or a float, using the <c>int</c> or <c>float</c> converter function.
-  </p>
+  </p> -->
 
-  <subsection xml:id="type_conversion_functions">
+  <!-- <subsection xml:id="type_conversion_functions">
     <title>Type conversion functions</title>
 
     <p>Variables have
@@ -62,8 +69,10 @@ print(type(pi))
 <p>The type of a variable is the type of the object it currently refers to.</p>
 
     <p>Sometimes it is necessary to convert values from one type to another.  Python provides
-      a few simple functions that will allow us to do that.  The functions <c>int</c>, <c>float</c> and <c>str</c>
-      will (attempt to) convert their arguments into types <title_reference>int</title_reference>, <title_reference>float</title_reference> and <title_reference>str</title_reference>
+      a few simple functions that will allow us to do that.  The functions <c>int</c>, <c>float</c> and
+  <c>str</c>
+      will (attempt to) convert their arguments into types <title_reference>int</title_reference>,
+  <title_reference>float</title_reference> and <title_reference>str</title_reference>
       respectively.  We call these <term>type conversion</term> functions.</p>
 <p>The <c>int</c> function can take a floating point number or a string, and turn it
       into an int. For floating point numbers, it <em>discards</em> the decimal portion of
@@ -78,7 +87,8 @@ print(type(pi))
       </program>
 
       <p>
-        Using int() on a float removes the decimal part, essentially "rounding down" to the nearest whole number. 
+        Using int() on a float removes the decimal part, essentially "rounding down" to the nearest whole
+  number. 
         This can be useful when you only need the integer part of a float, 
         but remember that it doesn't round to the nearest integer—it simply drops the decimal part.
       </p>
@@ -96,10 +106,12 @@ print(type(pi))
             </input>
       </program>
 <p>
-  When using int() on a float with no decimal part other than .0 (like 3.0 ), Python simply returns the integer value without any fractional part. 
+  When using int() on a float with no decimal part other than .0 (like 3.0 ), Python simply returns
+  the integer value without any fractional part. 
   This conversion is straightforward because there's no rounding or truncation needed.
 </p>
-<p>Along the same lines, when converting a negative float to an integer truncation moves towards zero, so -3.999 becomes -3. 
+<p>Along the same lines, when converting a negative float to an integer truncation moves towards
+  zero, so -3.999 becomes -3. 
 </p>
       <program xml:id="ac_input_7" label="ac_input_7" interactive="activecode" language="python">
         <input>
@@ -109,8 +121,10 @@ print(type(pi))
       </program>
       
         <p>
-         The int() function is can also be used to convert strings containing numeric characters (like "2345") into actual integers. 
-         This is essential when we want to work with numeric data that's initially in string form, such as data from user input, text files, or databases.
+         The int() function is can also be used to convert strings containing numeric characters (like
+  "2345") into actual integers. 
+         This is essential when we want to work with numeric data that's initially in string form, such as
+  data from user input, text files, or databases.
         </p>
       <program xml:id="ac_input_8" label="ac_input_8" interactive="activecode" language="python">
         <input>
@@ -120,11 +134,16 @@ print(type(pi))
       </program>
 
       <p>
-        In this example, we see the difference between a string representation of a number and an integer (int) representation of a number. Here, "2345" is a string because it's enclosed in quotation marks. Earlier we have seen that when we use print("2345"), Python outputs it as text.
-        Even though the characters are numeric, Python still considers it as text (a sequence of characters) rather than a number.
-       In the Second Line (<c>print(int("2345"))</c>), the int() function converts (or "parses") the string "2345" into an integer value. 
+        In this example, we see the difference between a string representation of a number and an integer
+  (int) representation of a number. Here, "2345" is a string because it's enclosed in quotation
+  marks. Earlier we have seen that when we use print("2345"), Python outputs it as text.
+        Even though the characters are numeric, Python still considers it as text (a sequence of
+  characters) rather than a number.
+       In the Second Line (<c>print(int("2345"))</c>), the int() function converts (or "parses") the
+  string "2345" into an integer value. 
           This means Python will interpret "2345" as a numeric value, rather than as text.
-          int("2345") takes the string version and produces the integer 2345, which allows us to perform arithmetic operations (calculations) with it if needed.
+          int("2345") takes the string version and produces the integer 2345, which allows us to perform
+  arithmetic operations (calculations) with it if needed.
           
       </p>
       <p>
@@ -154,8 +173,10 @@ print(float("123.45"))
 print(type(float("123.45")))
     </input>
 </program>
-<p>The type converter <c>str</c> turns its argument into a string.  Remember that when we print a string, the
-        quotes are removed.  However, if we print the type, we can see that it is definitely <title_reference>str</title_reference>.</p>
+<p>The type converter <c>str</c> turns its argument into a string.  Remember that when we print a
+  string, the
+        quotes are removed.  However, if we print the type, we can see that it is definitely
+  <title_reference>str</title_reference>.</p>
 <program xml:id="ac_input_12" label="ac_input_12" interactive="activecode" language="python">
 <input>
 print(str(17))
@@ -164,24 +185,73 @@ print(type(str(123.45)))
     </input>
 </program>
       
-  </subsection>
+  </subsection> -->
 
-  <p>Here is a program that turns a number of seconds into more human readable counts of hours, minutes, and seconds. A call to <c>input()</c> allows the user to enter the number of seconds. Then we convert that string to an integer. From there we use the division and modulus operators to compute the results.</p>
+  <p> As shown above, even though an integer was entered, the value stored in <code>m</code> is a
+    string. Because of this, the value cannot be used directly in numeric calculations. </p>
+
+  <p> To use the input as a number, the string must be converted to a numeric type. Python provides
+    built-in conversion functions such as <code>int</code> and <code>float</code> for this purpose. </p>
+
+  <program>
+    <input language="python" interactive="activecode">
+      m = input("Please enter your age: ")
+      age = int(m)
+      print(age)
+      print(type(age))
+    </input>
+  </program>
+
+  <p> After conversion, the value stored in <code>age</code> is an integer and can be used in
+    calculations. </p>
+
+  <program language="python">
+    <input>
+      print(age + 1)
+    </input>
+  </program>
+
+  <p> If the input may contain a decimal value, the <code>float</code> function can be used instead. </p>
+
+  <program>
+    <input language="python" interactive="activecode">
+      height = float(input("Please enter your height in meters: "))
+      print(height * 2)
+    </input>
+  </program>
+
+  <p>
+    As the programmer, it is your responsibility to choose the appropriate type
+    conversion based on how the input value will be used. Understanding when and how to
+    convert input values is essential for writing correct programs and avoiding
+    type-related errors.
+  </p>
+  <p>
+     Here is another example of a program that turns a number of seconds into more human readable
+    counts of hours, minutes, and seconds. A call to <c>input()</c> allows the user to enter the
+    number of seconds. Then we convert that string to an integer. From there we use the division and
+    modulus operators to compute the results. 
+  </p>
   <program xml:id="ac_input_13" label="ac_input_13" interactive="activecode" language="python">
     <input>
-str_seconds = input("Please enter the number of seconds you wish to convert")
-total_secs = int(str_seconds)
+      str_seconds = input("Please enter the number of seconds you wish to convert")
+      total_secs = int(str_seconds)
 
-hours = total_secs // 3600
-secs_still_remaining = total_secs % 3600
-minutes =  secs_still_remaining // 60
-secs_finally_remaining = secs_still_remaining  % 60
+      hours = total_secs // 3600
+      secs_still_remaining = total_secs % 3600
+      minutes = secs_still_remaining // 60
+      secs_finally_remaining = secs_still_remaining % 60
 
-print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
-        </input>
+      print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
+    </input>
   </program>
-  <p>The variable <c>str_seconds</c> will refer to the string that is entered by the user. As we said above, even though this string may be <c>7684</c>, it is still a string and not a number.  To convert it to an integer, we use the <c>int</c> function.
-            The result is referred to by <c>total_secs</c>.  Now, each time you run the program, you can enter a new value for the number of seconds to be converted.</p>
+  <p>
+    The variable <c>str_seconds</c> will refer to the string that is entered by the user. As we
+    said above, even though this string may be <c>7684</c>, it is still a string and not a number.
+    To convert it to an integer, we use the <c>int</c> function. The result is referred to by <c>
+    total_secs</c>. Now, each time you run the program, you can enter a new value for the number of
+    seconds to be converted.
+  </p>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -190,10 +260,10 @@ print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
       <p>What is printed when the following statements execute?</p>
       <program language="python">
         <input>
-n = input("Please enter your age: ")
-# user types in 18
-print ( type(n) )
-</input>
+          n = input("Please enter your age: ")
+          # user types in 18
+          print ( type(n) )
+        </input>
       </program>
     </statement>
     <choices>
@@ -202,32 +272,32 @@ print ( type(n) )
           <p>&lt;class 'str'&gt;</p>
         </statement>
         <feedback>
-                    All input from users is read in as a string.
-                </feedback>
+          All input from users is read in as a string.
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>&lt;class 'int'&gt;</p>
         </statement>
         <feedback>
-                    Even though the user typed in an integer, it does not come into the program as an integer.
-                </feedback>
+          Even though the user typed in an integer, it does not come into the program as an integer.
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>&lt;class 18&gt;</p>
         </statement>
         <feedback>
-                    18 is the value of what the user typed, not the type of the data.
-                </feedback>
+          18 is the value of what the user typed, not the type of the data.
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>18</p>
         </statement>
         <feedback>
-                    18 is the value of what the user typed, not the type of the data.
-                </feedback>
+          18 is the value of what the user typed, not the type of the data.
+        </feedback>
       </choice>
     </choices>
   </exercise>
@@ -237,12 +307,13 @@ print ( type(n) )
       <p>Click on all of the variables of type `int` in the code below</p>
     </statement>
     <areas>
-    <cline><area correct="no">seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
-    <p></p>
-    <cline><area>hours</area> = int(<area correct="no">seconds</area>) // 3600</cline>
-    <cline><area>total_secs</area> = int(<area correct="no">seconds</area>)</cline>
-    <cline><area>secs_still_remaining</area> = <area>total_secs</area> % 3600</cline>
-    <cline>print(<area>secs_still_remaining</area>)</cline>
+      <cline><area correct="no">seconds</area> = input("Please enter the number of seconds you wish
+        to convert")</cline>
+      <p></p>
+      <cline><area>hours</area> = int(<area correct="no">seconds</area>) // 3600</cline>
+      <cline><area>total_secs</area> = int(<area correct="no">seconds</area>)</cline>
+      <cline><area>secs_still_remaining</area> = <area>total_secs</area> % 3600</cline>
+      <cline>print(<area>secs_still_remaining</area>)</cline>
 
 
     </areas>
@@ -253,12 +324,13 @@ print ( type(n) )
       <p>Click on all of the variables of type `str` in the code below</p>
     </statement>
     <areas>
-    <cline><area>seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
-    <p></p>
-    <cline><area correct ="no">hours</area> = int(<area>seconds</area>) // 3600</cline>
-    <cline><area correct="no">total_secs</area> = int(<area>seconds</area>)</cline>
-    <cline><area correct="no">secs_still_remaining</area> = <area correct="no">total_secs</area> % 3600</cline>
-    <cline>print(<area correct ="no">secs_still_remaining</area>)</cline>
+      <cline><area>seconds</area> = input("Please enter the number of seconds you wish to convert")</cline>
+      <p></p>
+      <cline><area correct="no">hours</area> = int(<area>seconds</area>) // 3600</cline>
+      <cline><area correct="no">total_secs</area> = int(<area>seconds</area>)</cline>
+      <cline><area correct="no">secs_still_remaining</area> = <area correct="no">total_secs</area> %
+        3600</cline>
+      <cline>print(<area correct="no">secs_still_remaining</area>)</cline>
 
 
     </areas>

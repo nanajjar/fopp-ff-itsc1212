@@ -41,7 +41,7 @@
 
         <xi:include href="./FrontBackMatter/back_toc.ptx" />
 
-        <xi:include href="./Appendices/PrecedenceTable.ptx" />
+        <!-- <xi:include href="./Appendices/PrecedenceTable.ptx" /> -->
 
     </book>
 </pretext>

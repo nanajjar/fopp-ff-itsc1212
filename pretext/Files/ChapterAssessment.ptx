@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="files_chapter-assessment">
-  <title>Chapter Assessment</title>
+  <title>Drill and Practice</title>
 
   <exercise label="ac11_14_1">
       <p>The textfile, <c>travel_plans.txt</c>, contains the summer travel plans for someone with some commentary. Find the total number of characters in the file and save to the variable <c>num</c>.</p>

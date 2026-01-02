@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="exceptions_chapter-assessment">
-  <title>Chapter Assessment</title>
+  <title>Drill and Practice</title>
 <!--   <exercise label="ac12_04_1">
     <statement>
       <p>The code below takes the list of country, <c>country</c>, and searches to see if it is in the dictionary <c>gold</c> which shows some countries who won gold during the Olympics. However, this code currently does not work. Correctly add try/except clause in the code so that it will correctly populate the list, <c>country_gold</c>, with either the number of golds won or the string <q>Did not get gold</q>.</p>

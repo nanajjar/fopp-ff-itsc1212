@@ -127,6 +127,24 @@ When multiple values are provided, print displays them in the order they are giv
 This allows us to combine text and numbers in a single line of output without converting values to strings ourselves.
   </p>
 
+  <p>
+    We could produce the same output using string concatenation, but it would require more work:
+  </p>
+  <program language="python">
+    <input>
+print("Time: " + str(hours) + " hours and " + str(minutes) + " minutes")
+    </input>
+  </program>
+  <p>
+    Here, the <c>+</c> operator joins strings together, but because <c>hours</c> and <c>minutes</c> are integers, 
+    they must first be converted to strings using <c>str()</c>. 
+    While this approach works, it is more verbose and easier to get wrong.
+  </p>
+  <p>
+    Using multiple arguments with print is often simpler and more readable, especially when mixing text and numeric values. 
+    Later in the course, you will also see other ways to format output, but for now, passing multiple values to <c>print</c> is a clear 
+    and effective approach.
+  </p>
   </subsection>
    <remark> 
     <p>

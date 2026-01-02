@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <exercises xml:id="debugging_exercises">
-  <title>Practice Zone</title>
-
-
+  <title>Drill and Practice</title>
   <exercise label="clickable-error">
     <statement>
       <p>

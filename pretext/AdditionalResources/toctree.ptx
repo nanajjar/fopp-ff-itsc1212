@@ -8,7 +8,7 @@
         help you continue to learn and grow.</p>
     <p>Last updated <today />.</p>
     </introduction>
-
+    <xi:include href="../Appendices/PrecedenceTable.ptx" />
     <xi:include href='./FileSystems.ptx' />
     <xi:include href='./CommandLine.ptx' />
     <xi:include href='./IntroToGit.ptx' />

@@ -4,7 +4,6 @@
     <introduction>
         <p>Last updated <today />.</p>
     </introduction>
-
     <xi:include href='./intro-Functions.ptx' />
     <xi:include href='./FunctionDefinitions.ptx' />
     <xi:include href='./FunctionInvocation.ptx' />
