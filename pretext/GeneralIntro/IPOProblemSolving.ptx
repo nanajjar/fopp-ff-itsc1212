@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="sec-ipo-problem-solving">
-  <title>Computational Problem Solving and the IPO Model</title>
+  <title>The IPO Model</title>
 
   <p>
     The basic building blocks of programs (input, output, computation, conditional

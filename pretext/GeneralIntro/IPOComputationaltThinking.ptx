@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="sec-ipo-computational-thinking">
  
-    <title>Computational Thinking Through the IPO Lens</title>
+    <title>Computational Thinking and IPO</title>
 
  <p>
     Earlier in the course, we introduced <term>computational thinking</term> as a set of
@@ -16,7 +16,7 @@
     its own inputs, processing steps, and outputs. These smaller pieces often become
     functions in your programs.
   </p>
-  
+
     <p>
     <em>Abstraction</em> is about focusing on the big picture instead of every detail.
     When you describe a part of a program using only its inputs and outputs, you can
