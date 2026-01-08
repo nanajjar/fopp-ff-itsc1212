@@ -12,15 +12,15 @@
 
 <xi:include href="./StatementsandExpressions.ptx"/>
 
-<xi:include href="./DataTypes.ptx"/>
-
-<xi:include href="./ConvertTypeFunctions.ptx"/>
-
-<xi:include href="./FunctionCalls.ptx"/>
-
 <xi:include href="./OperatorsandOperands.ptx" />
 
 <xi:include href="./OrderofOperations.ptx"/>
+
+<xi:include href="./FunctionCalls.ptx"/>
+
+<xi:include href="./DataTypes.ptx"/>
+
+<xi:include href="./ConvertTypeFunctions.ptx"/>
 
 <xi:include href="./StringOperators.ptx" />
 
