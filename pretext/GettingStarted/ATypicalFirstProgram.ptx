@@ -129,7 +129,7 @@ Strings are versatile and widely used, from displaying messages to handling user
       </choice>
       <choice correct="yes">
         <statement>
-          <p></p>
+          <p>A sequence of characters enclosed in quotes.</p>
         </statement>
         <feedback>
                 </feedback>
