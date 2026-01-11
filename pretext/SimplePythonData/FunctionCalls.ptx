@@ -91,7 +91,9 @@ Some built-in functions take multiple inputs, separated by commas. The order of 
 </p>
 
 
-<p>[SUBSECTION]Seeing Output vs. Computing Values</p>
+<subsection xml:id="subsec-seeing-output-values">
+  <title>Seeing Output vs. Computing Values</title>
+  
 
 <p>Not every computation automatically produces visible output. Python can compute a value without displaying it.
 For example, consider the following code:</p>
@@ -130,7 +132,7 @@ print(3 + 4)
     </input>
   </program>
   <p>Here, print is responsible for making the output visible.</p>
-
+</subsection>
 <subsection>
   <title>Function calls as part of complex expressions</title>
 
