@@ -213,7 +213,7 @@ class myTests(TestCaseGui):
 
    def testEight(self):
       self.assertEqual(numbs, 90, "Testing that numbs is assigned to correct values.")
-      self.assertNotIn("len(", self.getEditorText(), "Testing your code (Don't worry about actual and expected values)."))
+      self.assertNotIn("len(", self.getEditorText(), "Testing your code (Don\t worry about actual and expected values).")
 
 myTests().main()
         </input>
