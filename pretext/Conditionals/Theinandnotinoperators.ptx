@@ -125,8 +125,7 @@ print(57 in alist)
     </statement>
     <program xml:id="ac7_9_2_editor" interactive="activecode" language="python">
       <input>
-        str1 = "Today you are you! That is truer than true! There is no one alive who is you-er than
-        you!"
+        str1 = "Today you are you! That is truer than true! There is no one alive who is you-er than you!"
 
         =====
 
