@@ -27,7 +27,7 @@
     </statement>
     <areas language="python">
       <cline><area correct="yes">first name =  input("Enter your name")</area></cline>
-      <cline><area correct="no">print("Nice to meet you,", name)</area></cline>
+      <cline><area correct="no">print("Nice to meet you,", first_name)</area></cline>
     </areas>
     <feedback>
       <p>
@@ -43,9 +43,9 @@
       </p>
     </statement>
     <areas language="python">
-      <cline><area correct="no">bill = float(input('Enter your bill amount"))</area></cline>
-      <cline><area correct="no">tax = float(input('Enter your tax percentage"))</area></cline>
-      <cline><area correct="no">tip = float(input('Enter your tip percentage"))</area></cline>
+      <cline><area correct="no">bill = float(input("Enter your bill amount"))</area></cline>
+      <cline><area correct="no">tax = float(input("Enter your tax percentage"))</area></cline>
+      <cline><area correct="no">tip = float(input("Enter your tip percentage"))</area></cline>
       <cline><area correct="yes">total = bill * tax * tip</area></cline>
 
       <cline><area correct="no">print("your total amount is " + "$" + str(total)) </area></cline>
@@ -53,8 +53,25 @@
     </areas>
     <feedback>
       <p>
-        Remember, proper that the program will do what we tell it to do whether it is logical or not. 
+        Remember, that the program will do what we tell it to do whether it is logical or not. 
       </p>
+    </feedback>
+  </exercise>
+
+  <exercise label="clickable-error4">
+    <statement>
+      <p>
+        Identify the problematic statements in this Python code.
+      </p>
+    </statement>
+    <areas language="python">
+      <cline><area correct="no">age = input("Enter your age")</area></cline>
+      <cline><area correct="yes">future_age = age + 5</area></cline>
+      <cline><area correct="no">print(future_age)</area></cline>
+    </areas>
+    <feedback>
+      <p>
+        Remember, proper thinking about data types is important. </p>
     </feedback>
   </exercise>
 </exercises>
