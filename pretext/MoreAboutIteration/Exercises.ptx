@@ -50,7 +50,34 @@
     </program>
   </exercise>
 
-  
+   <exercise label="ac6_6_5">
+    <statement>
+      <p>Below is a for loop that works. Underneath the for loop, rewrite the problem so that it does the same thing, but using a while loop instead of a for loop. Assign the accumulated total in the while loop code to the variable <c>sum2</c>. Once complete, sum2 should equal sum1.</p>
+    </statement>
+    <program xml:id="ac6_6_5_editor" interactive="activecode" language="python">
+      <input>
+
+sum1 = 0
+
+lst = [65, 78, 21, 33]
+
+for x in lst:
+    sum1 = sum1 + x
+
+=====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+   def testFive(self):
+      self.assertEqual(sum2, 197, "Testing that sum2 is assigned to correct value.")
+      self.assertIn('while', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+myTests().main()
+        </input>
+    </program>
+  </exercise>
 
   <query label="poll_iteration_1">
     <statement>
