@@ -122,7 +122,6 @@ print(57 in alist)
         is in string <c>str1</c> and if it is then assign <q>True! You are you!</q> to the variable <c>
         output</c>. If neither are in <c>str1</c>, assign <q>Neither true nor false!</q> to <c>
         output</c>.</p>
-        <p>TEST</p>
     </statement>
     <program xml:id="ac7_9_2_editor" interactive="activecode" language="python">
       <input>

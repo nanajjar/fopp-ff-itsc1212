@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<section xml:id="review-3">
+    <title>Review 3</title>
+    
+    <p>For each snippet, write the output.</p>
+        <exercise label="review3-trace-1">
+            <statement>
+For each snippet, write the output.
+                </statement>
+
+                  <response>Enter</response>
+                     
+
+              
+        </exercise>
+
+          <exercise label="">
+            <statement>
+                <code>
+               
+                </code>
+                </statement>
+           
+
+              <program xml:id="review3-fix-1" interactive="activecode" language="python">
+      <input>
+i = 0
+while i  &lt; 5:
+    print(i)
+      </input>
+    </program>
+        </exercise>
+                  <exercise label="">
+            <statement>
+                <code>
+               
+                </code>
+                </statement>
+           
+
+              <program xml:id="review3-fix-2" interactive="activecode" language="python">
+      <input>
+i = 0
+while i  &lt; 5:
+    print(i)
+      </input>
+    </program>
+        </exercise>
+</section>

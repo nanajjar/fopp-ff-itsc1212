@@ -24,5 +24,4 @@
     <xi:include href='./WPDontMutateAListYouIterateThrough.ptx' />
     <xi:include href='./Glossary.ptx' />
     <xi:include href='./Exercises.ptx' />
-    <xi:include href='./week4a1.ptx' />
 </chapter>
