@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<section xml:id="practice-debug-code">
+  <title>Debug the Code</title>
+
+  <exercise label="review3-fix-1">
+   
+ <statement>
+     <p>
+        What is wrong with this code snippet? How would you fix it?
+        </p>      
+      </statement>
+
+
+    <program xml:id="review3-fix-1" interactive="activecode" language="python">
+           <input>
+i = 0
+while i &lt; 5:
+    print(i)
+           </input>
+    </program>
+  </exercise>
+  <exercise label="review3-fix-2">
+     <statement>
+     <p>
+        What is wrong with this code snippet? How would you fix it?
+        </p>
+            </statement>
+
+
+    <program xml:id="review3-fix-2" interactive="activecode" language="python">
+     
+      <input>
+        for i in range(5):
+        print(i)
+      </input>
+    </program>
+  </exercise>
+
+  <exercise label="review3-fix-3">
+     <statement>
+        <p>
+        What is wrong with this code snippet? How would you fix it?
+        </p>
+      </statement>
+    <program xml:id="review3-fix-3" interactive="activecode" language="python">
+      <input>
+def print_numbers_to_n(n):
+    for i in range(n):
+        print(n)
+
+print_numbers_to_n(5)
+      </input>
+    </program>
+  </exercise>
+
+  <exercise label="review3-fix-4">
+     <statement>
+        <p>
+        What is wrong with this code snippet? How would you fix it?
+        </p>
+      </statement>
+    <program xml:id="review3-fix-4" interactive="activecode" language="python">
+      <input>
+text = "hello world"
+words = text.split
+print(words)
+      </input>
+    </program>
+  </exercise>
+
+    <exercise label="review3-fix-5">
+     <statement>
+        <p>
+        What is wrong with this code snippet? How would you fix it?
+        </p>
+      </statement>
+    <program xml:id="review3-fix-5" interactive="activecode" language="python">
+      <input>
+numbers = [1, 2, 3]
+numbers = numbers.append(4)
+print(numbers)
+      </input>
+    </program>
+  </exercise>
+
+     <exercise label="review3-fix-6">
+     <statement>
+        <p>
+        What is wrong with this code snippet? How would you fix it?
+        </p>
+      </statement>
+    <program xml:id="review3-fix-6" interactive="activecode" language="python">
+      <input>
+word = "apples"
+word.uppercase()
+print(word)
+      </input>
+    </program>
+  </exercise>
+
+       <exercise label="review3-fix-7">
+     <statement>
+        <p>
+        What is wrong with this code snippet? How would you fix it?
+        </p>
+      </statement>
+    <program xml:id="review3-fix-7" interactive="activecode" language="python">
+      <input>
+text = "hello"
+text[0] = "H"
+print(text)
+      </input>
+    </program>
+  </exercise>
+  
+
+</section>

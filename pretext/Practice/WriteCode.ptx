@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<section xml:id="practice-write-code">
+  <title>Write the Code </title>
+
+   <exercise label = "review3-code-1">
+      <statement>
+        <p>
+Write a function named <c>sum_to_n(n)</c> that returns the sum from 1 to <c>n</c>.       
+</p>
+      
+      </statement>
+          <program xml:id="review3-code-1" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+     <exercise label = "review3-code-2">
+      <statement>
+        <p>
+Write a function named <c>count_evens(numbers)</c> that returns how many values in the list are even.      
+</p>
+      
+      </statement>
+          <program xml:id="review3-code-2" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+  <exercise label = "review3-code-3">
+      <statement>
+        <p>
+Write a function named <c>find_max(numbers)</c>that returns the largest number in the list. Do not use <c>max()</c>.      
+</p>
+      
+      </statement>
+          <program xml:id="review3-code-3" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+  <exercise label = "review3-code-4">
+      <statement>
+        <p>
+Write a function named <c>multiplication_table(n) </c> that prints the multiplication table for <c>n</c> from 1 through 10.      
+</p>
+      
+      </statement>
+          <program xml:id="review3-code-4" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+    <exercise label = "review3-code-5">
+      <statement>
+        <p>
+Write a function named <c>count_passing(scores) </c>that counts how many scores are greater than or equal to 70.
+
+</p>
+      
+      </statement>
+          <program xml:id="review3-code-5" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+  <exercise label = "review3-code-6">
+      <statement>
+        <p>
+Write a function named <c>sum_greater_10(numbers)</c> that computes the sum of numbers greater than 10.
+
+
+</p>
+      
+      </statement>
+          <program xml:id="review3-code-6" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+  <exercise label = "review3-code-7">
+      <statement>
+        <p>
+Write code to print this pattern using a loop:
+</p>
+<pre>
+  *
+  **
+  ***
+  ****
+  *****
+</pre>  
+      </statement>
+          <program xml:id="review3-code-7" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+
+  <exercise label = "review3-code-8">
+      <statement>
+        <p>
+Write a function named f<c>first_duplicate(numbers)</c> that returns the first number that appears more than once. Return <c>None</c> if there are no duplicates.
+
+</p>
+      </statement>
+          <program xml:id="review3-code-8" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+  <exercise label = "review3-code-9">
+      <statement>
+        <p>
+Write a function <c>sublist_until_target(numbers, target)</c> that returns a list of elements before the first occurrence of target. If the target is not found, return the entire list.
+</p>
+
+      </statement>
+          <program xml:id="review3-code-9" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+
+    <exercise label = "review3-code-10">
+      <statement>
+        <p>
+Write a function <code>count_words(text)</code> that returns the number of words in the given text. Assume that words are separated by a single space.
+</p>
+
+      </statement>
+          <program xml:id="review3-code-10" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+
+  <exercise label = "review3-code-11">
+      <statement>
+        <p>
+Write a function <code>format_names(names)</code> takes a list of strings and returns a single string with names separated by ", ".
+</p>
+<p>
+  Example:
+["Ali", "Sam", "Jo"] --> "Ali, Sam, Jo"
+</p>
+
+      </statement>
+          <program xml:id="review3-code-11" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+
+   <exercise label = "review3-code-12">
+      <statement>
+        <p>
+Write a function <code>censor_word(text)</code> that returns a new string of the text where every occurrence of "bad" is replaced with "***".
+Do not modify the original string.
+</p>
+      </statement>
+          <program xml:id="review3-code-12" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+  <exercise label = "review3-code-13">
+      <statement>
+        <p>
+Write a function <code>short_words(text)</code> that takes string of text and returns a list of words with length ≤ 3.
+Do not modify the original string.
+</p>
+      </statement>
+          <program xml:id="review3-code-13" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+    <exercise label = "review3-code-14">
+      <statement>
+        <p>
+Write a function <code>contains_word(text, word)</code> that returns True if the exact word appears in the text. 
+Otherwise returns False.
+</p>
+      </statement>
+          <program xml:id="review3-code-14" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+</section>

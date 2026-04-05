@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    <title>Practice</title>
+        <introduction>
+        <p>Last updated <today />.</p>
+        </introduction>
+
+        <xi:include href='./CodeTracing.ptx' />
+        <xi:include href='./FixingErrors.ptx' />
+        <xi:include href='./CompleteCode.ptx' />
+        <xi:include href='./WriteCode.ptx' />
+
+
+</chapter>

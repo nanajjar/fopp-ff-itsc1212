@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<section xml:id="practice-code-tracing">
+  <title>Code Tracing</title>
+
+  <p></p>
+  <exercise label="review3-trace-1">
+    <statement> Write the output of this code snippet. <pre>
+count = 1
+while count &lt;= 5:
+    print(count)
+    count += 1
+    </pre>
+
+    </statement>
+
+    <response>
+    </response>
+
+  </exercise>
+
+    <exercise label="review3-trace-2">
+    <statement> Write the output of this code snippet. <pre>
+for i in range(2, 10, 2):
+    print(i)
+    </pre>
+
+    </statement>
+
+    <response>
+    </response>
+
+  </exercise>
+ <exercise label="review3-trace-3">
+    <statement> Write the output of this code snippet. <pre>
+x = 0
+for i in range(3):
+    x += i
+print(x)
+    </pre>
+
+    </statement>
+
+    <response>
+    </response>
+
+  </exercise>
+  <exercise label="review3-trace-4">
+    <statement> <p>Write the output of this code snippet.</p> <pre>
+num = 5
+while num > 0:
+    if num % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+    num -= 1
+    </pre>
+
+    </statement>
+
+    <response>
+    </response>
+
+  </exercise>
+  <exercise label="review3-trace-5">
+    <statement> <p>Write the output of this code snippet.</p> <pre>
+text = "hello world"
+words = text.split()
+print(words)
+    </pre>
+
+    </statement>
+
+    <response>
+    </response>
+
+  </exercise>
+
+    <exercise label="review3-trace-6">
+    <statement> <p>Write the output of this code snippet.</p> <pre>
+text = "python"
+print(text.upper())
+    </pre>
+
+    </statement>
+
+    <response>
+    </response>
+
+  </exercise>
+      <exercise label="review3-trace-7">
+    <statement> <p>Write the output of this code snippet.</p> <pre>
+numbers = [1, 2, 3]
+numbers.append(4)
+print(numbers)
+    </pre>
+
+    </statement>
+
+    <response>
+    </response>
+
+  </exercise>
+
+        <exercise label="review3-trace-8">
+    <statement> <p>Write the output of this code snippet.</p> <pre>
+text = "a,b,c"
+parts = text.split(",")
+print(parts[1])
+    </pre>
+
+    </statement>
+
+    <response>
+    </response>
+
+  </exercise>
+
+</section>

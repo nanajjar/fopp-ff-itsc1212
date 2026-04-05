@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<section xml:id="practice-complete-code">
+  <title>Complete the Code</title>
+
+ <exercise label = "review3-complete-1">
+      <statement>
+        <p>
+        Complete the code to print numbers 1 through 10 using a while loop.
+       </p>
+       <pre>
+num = ___
+while num &lt;= ___:
+  print(num)
+  num += ___
+       </pre>
+      </statement>
+          <program xml:id="review3-complete-1" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+
+  <exercise label = "review3-complete-2">
+      <statement>
+        <p>
+        Complete the code to print only even numbers from 1 to 20 using a for loop.
+       </p>
+       <pre>
+for i in range(1, 21):
+  if i % ___ == ___:
+    print(i)
+       </pre>
+      </statement>
+          <program xml:id="review3-complete-2" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+
+  <exercise label = "review3-complete-3">
+      <statement>
+        <p>
+        Complete the code to print only even numbers from 1 to 20 using a for loop.
+       </p>
+       <pre>
+numbers = [4, 12, 7, 15, 9, 20]
+count = 0
+
+for num in numbers:
+  if num ___ 10:
+    count += 1
+
+print(count)
+       </pre>
+      </statement>
+          <program xml:id="review3-complete-3" interactive="activecode" language="python">
+
+      <input>
+
+      </input>
+    </program>
+  </exercise>
+
+</section>

@@ -19,6 +19,5 @@
     <!-- <xi:include href='./WPKeepingTrackofYourIteratorVariableYourIterable.ptx' /> -->
     <xi:include href='./Glossary.ptx' />
     <xi:include href='./Exercises.ptx' />
-    <xi:include href='./Practice.ptx' />
 
 </chapter>
