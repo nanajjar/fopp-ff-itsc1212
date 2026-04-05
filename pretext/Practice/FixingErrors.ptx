@@ -92,7 +92,7 @@ print(numbers)
     <program xml:id="review3-fix-6" interactive="activecode" language="python">
       <input>
 word = "apples"
-word.uppercase()
+word.upper()
 print(word)
       </input>
     </program>
