@@ -41,18 +41,31 @@ def add_one(num):
 
             </statement>
             <cardsort>
+
                 <match>
-                    <premise order="2">
-                        <program>
+  <premise order="6"> <program language="python">
+def a_function(x):
+    return x ** x
+                        </program></premise>
+  </match>
+                <match>
+                    <premise order="3">
+                        <program language="python">
 def a_function(x):
     return x * x
+                        </program>
+                    </premise>
+                     <premise order="4">
+                        <program language="python">
+def a_function(x):
+    return x ** 2
                         </program>
                     </premise>
                     <response>returns the square of a number</response>
                 </match>
                 <match>
-                    <premise order="3">
-                        <program>
+                    <premise order="5">
+                        <program language="python">
 def a_function(name):
     return "Hello, " + name
                         </program>
@@ -65,14 +78,16 @@ def a_function(name):
 def a_function(num):
     return num > 0</program>
                     </premise>
+                    <premise order="2">
+                        <program language="python">
+def a_function(num):
+    return num >= 1</program>
+                    </premise>
                     <response>checks whether a number is positive</response>
                 </match>
 
             </cardsort>
         </exercise>
-
-
-
     </subsection>
     <subsection>
         <title>Part D: Fix</title>
