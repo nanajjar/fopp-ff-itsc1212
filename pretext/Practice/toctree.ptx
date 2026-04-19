@@ -9,6 +9,16 @@
         <xi:include href='./FixingErrors.ptx' />
         <xi:include href='./CompleteCode.ptx' />
         <xi:include href='./WriteCode.ptx' />
+        <xi:include href='./ReviewVariables.ptx' />
+        <xi:include href='./ReviewExpressions.ptx' />
+        <xi:include href='./ReviewStatements.ptx' />
+        <xi:include href='./ReviewFunctions.ptx' />
+        <xi:include href='./ReviewConditionals.ptx' />
+        <xi:include href='./ReviewLists.ptx' />
+        <xi:include href='./ReviewStrings.ptx' />
+        <xi:include href='./ReviewIteration.ptx' />
+        <xi:include href='./MixedReview.ptx' />
+
 
 
 </chapter>
