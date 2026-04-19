@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<section xml:id="ch-statements">
+  <title>Review - Statements</title>
+  <introduction>
+    <p>Practice distinguishing between different types of statements and understanding what each line of code does.</p>
+  </introduction>
+  <subsection>
+    <title>Part A: Recognize</title>
+    <exercise xml:id="ex-stmt-recognize">
+      <statement>
+        <p>Label each code example as one of the following: assignment statement, function call statement, conditional statement, loop statement, or expression.</p>
+        <ol marker="1">
+          <li>
+            <c>x = 5</c>
+          </li>
+          <li>
+            <c>print(&quot;Done&quot;)</c>
+          </li>
+          <li>
+            <c>if score &gt; 70:</c>
+          </li>
+          <li>
+            <c>for num in numbers:</c>
+          </li>
+          <li>
+            <c>x + 2</c>
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection>
+    <title>Part B: Explain</title>
+    <exercise xml:id="ex-stmt-explain">
+      <statement>
+        <p>Explain in words what each line does: <c>count = count + 1</c>,          <c>print(name)</c>,          <c>total = price * quantity</c>, and <c>if age &gt;= 18:</c>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection>
+    <title>Part C: Fix</title>
+    <exercise xml:id="ex-stmt-order">
+      <statement>
+        <p>Reorder the following lines so they form a logical program: <c>print(total)</c>,          <c>price = 5</c>,          <c>quantity = 2</c>,          <c>total = price * quantity</c>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection>
+    <title>Part D: Create</title>
+    <exercise xml:id="ex-stmt-create">
+      <statement>
+        <p>Write a 4-line program that creates <c>name</c>, creates <c>age</c>, creates <c>message</c>, and prints the message.</p>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection>
+    <title>Reflection</title>
+    <exercise xml:id="ex-stmt-reflection">
+      <statement>
+        <p>Why is it important for program statements to appear in the correct order?</p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>

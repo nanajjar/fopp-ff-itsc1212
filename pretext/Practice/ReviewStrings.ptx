@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<section xml:id="ch-strings">
+    <title>Review - Strings</title>
+    <introduction>
+        <p>Practice indexing, slicing, concatenation, repetition, and common string methods.</p>
+    </introduction>
+    <subsection>
+        <title>Part A: Read the String</title>
+        <exercise xml:id="ex-str-read">
+            <statement>
+                <program language="python">
+word = "computer"</program>
+                <p>Identify the first character, the last character, the character at index <c>3</c>, and the length of the string.</p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part B: Predict the Result</title>
+        <exercise xml:id="ex-str-predict">
+            <statement>
+                <p>Determine the result of each expression: <c>word[0]</c>,                    <c>word[1:4]</c>,                    <c>word + &quot; science&quot;</c>,                    <c>&quot;ha&quot; * 2</c>, and <c>word.upper()</c>.
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part C: Match the Method</title>
+        <exercise xml:id="ex-str-match">
+            <statement>
+                <p>Match each method to what it does: <c>lower()</c>,                    <c>upper()</c>,                    <c>strip()</c>,                    <c>replace()</c>,                    <c>find()</c>.
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part D: Fix</title>
+        <exercise xml:id="ex-str-fix-1">
+            <statement>
+                <program language="python">
+name = "Sam"
+message = "Hello, " +  name + 5</program>
+                <p>Correct the error.</p>
+            </statement>
+        </exercise>
+        <exercise xml:id="ex-str-fix-2">
+            <statement>
+                <program language="python">
+text = "hello"
+text[0] = "H"</program>
+                <p>Correct the error.</p>
+            </statement>
+        </exercise>
+        <exercise xml:id="ex-str-fix-3">
+            <statement>
+                <program language="python">
+word = "cat"
+print(word[5])</program>
+                <p>Correct the error.</p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part E: Create</title>
+        <exercise xml:id="ex-str-create">
+            <statement>
+                <p>Using <c>name = &quot;Jordan&quot;</c>, write code that creates and prints the string <q>Hello, Jordan!</q>. Then write code that prints only the first three letters of the name.</p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Think About ...</title>
+        <exercise xml:id="ex-str-reflection">
+            <statement>
+                <p>How are strings similar to lists? How are they different?</p>
+            </statement>
+        </exercise>
+    </subsection>
+</section>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<section xml:id="review1">
+      <title>Review - Variables</title>
+      <introduction>
+        <p>Practice identifying variables, assigning values, updating variables, and tracking how variables change during program execution.</p>
+      </introduction>
+      <subsection xml:id="var-recognize">
+        <title>Part A: Recognize</title>
+        <p>For each line of code below, identify the variable name, the value being stored, and whether the variable is being created or updated.</p>
+        <program language="python">
+age = 18
+name = "Mia"
+age = age + 1
+city = "Charlotte"</program>
+        <exercise xml:id="ex-var-recognize">
+          <statement>
+            <p>Complete a table with four columns: line of code, variable name, value stored, and create or update.</p>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="var-trace">
+        <title>Part B: Trace</title>
+        <program language="python">
+score = 10
+bonus = 5
+score = score + bonus
+bonus = 2
+score = score + bonus</program>
+        <exercise xml:id="ex-var-trace">
+          <statement>
+            <p>Trace the values of <c>score</c> and <c>bonus</c> after each line runs.</p>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="var-fix">
+        <title>Part C: Fix</title>
+        <exercise xml:id="ex-var-fix-1">
+          <statement>
+            <p>Rewrite the corrected code.</p>
+            <program language="python">
+name = "Raya"
+print(nme)</program>
+          </statement>
+        </exercise>
+        <exercise xml:id="ex-var-fix-2">
+          <statement>
+            <p>Rewrite the corrected code.</p>
+            <program language="python">
+age = age + 1</program>
+          </statement>
+        </exercise>
+        <exercise xml:id="ex-var-fix-3">
+          <statement>
+            <p>Rewrite the corrected code.</p>
+            <program language="python">
+score = 90
+score = "A"
+print(score + 5)</program>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="var-create">
+        <title>Part D: Create</title>
+        <exercise xml:id="ex-var-create">
+          <statement>
+            <p>Write code that creates a variable named <c>temperature</c> and stores the value <c>72</c>. Then update <c>temperature</c> by adding <c>5</c>. Create a variable named <c>greeting</c> storing <q>Hello</q>, and print both variables.</p>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="var-reflection">
+        <title>Think About ...</title>
+        <exercise xml:id="ex-var-reflection"><statement><p>In your own words, what is the difference between creating a variable and updating a variable?</p></statement></exercise>
+      </subsection>
+      </section>

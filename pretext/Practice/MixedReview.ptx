@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<section xml:id="ch-mixed-review">
+    <title>Mixed Review</title>
+    <introduction>
+        <p>Bring multiple CS1 concepts together in one guided review activity.</p>
+    </introduction>
+    <subsection>
+        <title>Part A: Code Dissubsection</title>
+        <exercise xml:id="ex-mixed-dissubsection">
+            <statement>
+                <program language="python">
+def count_long_words(words):
+    total = 0
+    for word in words:
+        if len(word) > 4:
+            total = total + 1
+    return total
+
+items = ["book", "banana", "pen", "laptop"]
+result = count_long_words(items)
+print(result)</program>
+                <p>Identify the function name, parameter, return type, loop used, condition checked, and output.</p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part B: Trace</title>
+        <exercise xml:id="ex-mixed-trace">
+            <statement>
+                <p>Complete a trace table for the program above with columns for iteration, <c>word</c>, whether <c>len(word) &gt; 4</c>, and <c>total</c>.
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part C: Fix</title>
+        <exercise xml:id="ex-mixed-fix">
+            <statement>
+                <p>The code below is meant to count how many even numbers are in a list, but it has errors. Correct it.</p>
+                <program language="python">
+def count_evens(numbers)
+    total = 0
+    for num in numbers
+        if num % 2 = 0:
+            total = total + 1
+    return total</program>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part D: Create</title>
+        <exercise xml:id="ex-mixed-create">
+            <statement>
+                <p>Write a function named <c>count_a_words(words)</c> that takes a list of strings and returns how many words start with the letter <c>a</c>. Then write three test calls.</p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Think About ...</title>
+        <exercise xml:id="ex-mixed-reflection">
+            <statement>
+                <p>Which topic in this worksheet felt strongest for you? Which one needs more review?</p>
+            </statement>
+        </exercise>
+    </subsection>
+</section>

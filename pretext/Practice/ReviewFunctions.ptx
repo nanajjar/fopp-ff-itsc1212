@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<section xml:id="ch-functions">
+    <title>Review - Functions</title>
+    <introduction>
+        <p>Practice reading, tracing, testing, and writing simple functions.</p>
+    </introduction>
+    <subsection>
+        <title>Part A: Recognize</title>
+        <exercise xml:id="ex-fn-recognize">
+            <statement>
+                <p>Study the function below and label the function name, parameter, return statement, and function call.</p>
+                <program language="python">
+def double(value):
+    return value * 2
+
+result = double(5)</program>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part B: Trace</title>
+        <exercise xml:id="ex-fn-trace">
+            <statement>
+                <program language="python">
+def add_one(num):
+    return num + 1</program>
+                <p>What value is returned by <c>add_one(4)</c>,                    <c>add_one(10)</c>, and <c>add_one(-1)</c>?
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part C: Match</title>
+        <exercise xml:id="ex-fn-match">
+            <statement>
+                <p>Match each function to its purpose.</p>
+                <program language="python">
+def square(x):
+    return x * x
+
+def greet(name):
+    return "Hello, " + name
+
+def is_positive(num):
+    return num > 0</program>
+                <p>Purposes: returns a greeting string; checks whether a number is positive; returns the square of a number.</p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part D: Fix</title>
+        <exercise xml:id="ex-fn-fix">
+            <statement>
+                <p>Correct the errors in the function below.</p>
+                <program language="python">
+def multiply(a, b)
+    result = a * b
+    print return result</program>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part E: Create</title>
+        <exercise xml:id="ex-fn-create">
+            <statement>
+                <p>Write a function named <c>subtract</c> that takes two parameters and returns the difference of the first minus the second. Then write three test calls.</p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Think About ...</title>
+        <exercise xml:id="ex-fn-reflection">
+            <statement>
+                <p>What is the difference between <c>print()</c> and <c>return</c> inside a function?</p>
+            </statement>
+        </exercise>
+    </subsection>
+</section>

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<section xml:id="ch-conditionals">
+    <title>Review - Conditionals</title>
+    <introduction>
+        <p>Practice evaluating conditions, determining which branch runs, and writing basic decision-making code.</p>
+    </introduction>
+    <subsection>
+        <title>Part A: True or False</title>
+        <exercise xml:id="ex-cond-tf">
+            <statement>
+                <p>Determine whether each condition is true or false: <c>5 &gt; 2</c>,                    <c>3 == 4</c>,                    <c>10 != 7</c>,                    <c>len(&quot;cat&quot;) &gt; 5</c>, and <c>8 &lt;= 8</c>.
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part B: Which Branch Runs?</title>
+        <exercise xml:id="ex-cond-branch-1">
+            <statement>
+                <p>State what will be printed.</p>
+                <program language="python">
+age = 16
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")</program>
+            </statement>
+        </exercise>
+        <exercise xml:id="ex-cond-branch-2">
+            <statement>
+                <p>State what will be printed.</p>
+                <program language="python">
+score = 82
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+else:
+    print("Needs Improvement")</program>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part C: Trace the Decision</title>
+        <exercise xml:id="ex-cond-trace">
+            <statement>
+                <program language="python">
+temp = 72
+if temp > 75:
+    print("Hot")
+else:
+    print("Not hot")</program>
+                <p>Complete a table with the condition checked, the result of the condition, the branch that runs, and the output.</p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part D: Fix</title>
+        <exercise xml:id="ex-cond-fix-1">
+            <statement>
+                <p>Correct the errors.</p>
+                <program language="python">
+x = 5
+if x = 5:
+    print("Equal")</program>
+            </statement>
+        </exercise>
+        <exercise xml:id="ex-cond-fix-2">
+            <statement>
+                <p>Correct the errors.</p>
+                <program language="python">
+score = 90
+if score > 70
+    print("Pass")
+else
+    print("Try again")</program>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Part E: Create</title>
+        <exercise xml:id="ex-cond-create">
+            <statement>
+                <p>Write an <c>if/else</c> statement that prints <q>Even</q> if a number is even and <q>Odd</q> otherwise, using <c>num = 7</c>.
+                </p>
+            </statement>
+        </exercise>
+    </subsection>
+    <subsection>
+        <title>Reflection</title>
+        <exercise xml:id="ex-cond-reflection">
+            <statement>
+                <p>When should a programmer use <c>if/else</c> instead of just writing one print statement?</p>
+            </statement>
+        </exercise>
+    </subsection>
+</section>

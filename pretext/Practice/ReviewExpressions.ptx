@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<section xml:id="ch-expressions">
+  <title>Review - Expressions</title>
+  <introduction>
+    <p>Practice evaluating arithmetic and string expressions and understanding operator behavior.</p>
+  </introduction>
+  <subsection>
+    <title>Part A: Recognize</title>
+    <exercise xml:id="ex-exp-recognize">
+      <statement>
+        <p>Find the value of each expression.</p>
+        <ol marker="1">
+          <li>
+            <c>3 + 4 * 2</c>
+          </li>
+          <li>
+            <c>(3 + 4) * 2</c>
+          </li>
+          <li>
+            <c>10 // 3</c>
+          </li>
+          <li>
+            <c>10 % 3</c>
+          </li>
+          <li>
+            <c>&quot;Hi&quot; + &quot;!&quot;</c>
+          </li>
+          <li>
+            <c>&quot;ha&quot; * 3</c>
+          </li>
+        </ol>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection>
+    <title>Part B: Trace</title>
+    <program language="python">
+price = 20
+quantity = 3
+name = "Pen"</program>
+    <exercise xml:id="ex-exp-trace">
+      <statement>
+        <p>Determine the result of each expression: <c>price * quantity</c>,          <c>price + 5</c>,          <c>name + &quot;s&quot;</c>,          <c>quantity - 1</c>, and <c>(price * quantity) + 2</c>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection>
+    <title>Part C: Fix</title>
+    <exercise xml:id="ex-exp-fix">
+      <statement>
+        <p>Fix each expression: <c>&quot;Hello&quot; + 5</c>,          <c>10 / / 2</c>,          <c>&quot;ha&quot; + &quot;ha&quot; + 3</c>, and <c>(4 + 2 * 3</c>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection>
+    <title>Part D: Create</title>
+    <program language="python">
+price = 8
+count = 4
+name = "apple"</program>
+    <exercise xml:id="ex-exp-create">
+      <statement>
+        <p>Write an expression for the total cost, an expression that creates <q>appleapple</q>, an expression for half the total cost, and an expression that gives the remainder when <c>count</c> is divided by <c>3</c>.
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection>
+    <title>Think About ...</title>
+    <exercise xml:id="ex-exp-reflection">
+      <statement>
+        <p>Why does using parentheses sometimes change the result of an expression?</p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>
