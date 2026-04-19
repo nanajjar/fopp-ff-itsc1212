@@ -27,40 +27,61 @@
           </li>
         </ol>
       </statement>
- <response>
-    </response>
+      <response>
+      </response>
     </exercise>
   </subsection>
   <subsection>
     <title>Part B: Explain</title>
     <exercise xml:id="ex-stmt-explain">
       <statement>
-        <p>Explain in words what each line does: <c>count = count + 1</c>,          <c>print(name)</c>,          <c>total = price * quantity</c>, and <c>if age &gt;= 18:</c>.
-        </p>
+        <p>Explain in words what each line does:</p>
+        <ul>
+          <li>
+            <c>count = count + 1</c>
+          </li>
+          <li>
+            <c>print(name)</c>
+          </li>
+          <li>
+            <c>total = price * quantity</c>
+          </li>
+          <li>
+            <c>if age &gt;= 18:</c>
+          </li>
+        </ul>
       </statement>
- <response>
-    </response>
+      <response>
+      </response>
     </exercise>
   </subsection>
   <subsection>
     <title>Part C: Fix</title>
-    <exercise xml:id="ex-stmt-order">
+    <exercise label="review_statements" xml:id="ex-stmt-order">
       <statement>
-        <p>Reorder the following lines so they form a logical program: <c>print(total)</c>,          <c>price = 5</c>,          <c>quantity = 2</c>,          <c>total = price * quantity</c>.
+        <p>Reorder the following lines so they form a logical program that runs without errors.
         </p>
       </statement>
- <response>
-    </response>
+      <program xml:id="review_statements" interactive="activecode" language="python">
+        <input>
+      print(total)
+      price = 5
+      total = price * quantity
+      quantity = 2
+
+        </input>
+      </program>
     </exercise>
   </subsection>
   <subsection>
     <title>Part D: Create</title>
     <exercise xml:id="ex-stmt-create">
       <statement>
-        <p>Write a 4-line program that creates <c>name</c>, creates <c>age</c>, creates <c>message</c>, and prints the message.</p>
+        <p>Write a 4-line program that displays a message that includes a person's name and age. The program must create the following variables <c>name</c>, and <c>age</c>, and then create the variable <c>message</c> using <c>name</c> and <c>age</c>, and then prints the message.</p>
+
       </statement>
- <response>
-    </response>
+      <program xml:id="review_statements2" interactive="activecode" language="python">
+      </program>
     </exercise>
   </subsection>
   <subsection>
@@ -69,8 +90,8 @@
       <statement>
         <p>Why is it important for program statements to appear in the correct order?</p>
       </statement>
- <response>
-    </response>
+      <response>
+      </response>
     </exercise>
   </subsection>
 </section>

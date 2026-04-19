@@ -8,15 +8,15 @@
         <title>Part A: Recognize</title>
         <exercise xml:id="ex-fn-recognize">
             <statement>
-                <p>Study the function below and label the function name, parameter, return statement, and function call.</p>
+                <p>Study the function below and label the function name, parameter, return statement, function call, and argument.</p>
                 <program language="python">
 def double(value):
     return value * 2
 
 result = double(5)</program>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
@@ -29,8 +29,8 @@ def add_one(num):
                 <p>What value is returned by <c>add_one(4)</c>,                    <c>add_one(10)</c>, and <c>add_one(-1)</c>?
                 </p>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
@@ -38,33 +38,54 @@ def add_one(num):
         <exercise xml:id="ex-fn-match">
             <statement>
                 <p>Match each function to its purpose.</p>
-                <program language="python">
-def square(x):
-    return x * x
 
-def greet(name):
-    return "Hello, " + name
-
-def is_positive(num):
-    return num > 0</program>
-                <p>Purposes: returns a greeting string; checks whether a number is positive; returns the square of a number.</p>
             </statement>
- <response>
-    </response>
+            <cardsort>
+                <match>
+                    <premise order="2">
+                        <program>
+def a_function(x):
+    return x * x
+                        </program>
+                    </premise>
+                    <response>returns the square of a number</response>
+                </match>
+                <match>
+                    <premise order="3">
+                        <program>
+def a_function(name):
+    return "Hello, " + name
+                        </program>
+                    </premise>
+                    <response>returns a greeting string</response>
+                </match>
+                <match>
+                    <premise order="1">
+                        <program language="python">
+def a_function(num):
+    return num > 0</program>
+                    </premise>
+                    <response>checks whether a number is positive</response>
+                </match>
+
+            </cardsort>
         </exercise>
+
+
+
     </subsection>
     <subsection>
         <title>Part D: Fix</title>
         <exercise xml:id="ex-fn-fix">
             <statement>
                 <p>Correct the errors in the function below.</p>
-                <program language="python">
+                <program xml:id="review_functions" interactive="activecode" language="python">
 def multiply(a, b)
     result = a * b
     print return result</program>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
@@ -73,8 +94,8 @@ def multiply(a, b)
             <statement>
                 <p>Write a function named <c>subtract</c> that takes two parameters and returns the difference of the first minus the second. Then write three test calls.</p>
             </statement>
- <response>
-    </response>
+            <program xml:id="review_functions2" interactive="activecode" language="python">
+            </program>
         </exercise>
     </subsection>
     <subsection>
@@ -83,8 +104,8 @@ def multiply(a, b)
             <statement>
                 <p>What is the difference between <c>print()</c> and <c>return</c> inside a function?</p>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
 </section>

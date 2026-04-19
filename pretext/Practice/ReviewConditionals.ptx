@@ -8,11 +8,28 @@
         <title>Part A: True or False</title>
         <exercise xml:id="ex-cond-tf">
             <statement>
-                <p>Determine whether each condition is true or false: <c>5 &gt; 2</c>,                    <c>3 == 4</c>,                    <c>10 != 7</c>,                    <c>len(&quot;cat&quot;) &gt; 5</c>, and <c>8 &lt;= 8</c>.
+                <p>Determine whether each condition is true or false:
                 </p>
+                <ul>
+                    <li>
+                        <c>5 &gt; 2</c> :
+                    </li>
+                    <li>
+                        <c>3 == 4</c> : 
+                    </li>
+                    <li>
+                        <c>10 != 7</c> : 
+                    </li>
+                    <li>
+                        <c>len(&quot;cat&quot;) &gt; 5</c> : 
+                    </li>
+                    <li>
+                        <c>8 &lt;= 8</c> : 
+                    </li>
+                </ul>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
@@ -27,8 +44,8 @@ if age >= 18:
 else:
     print("Minor")</program>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
         <exercise xml:id="ex-cond-branch-2">
             <statement>
@@ -42,8 +59,8 @@ elif score >= 80:
 else:
     print("Needs Improvement")</program>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
@@ -58,35 +75,34 @@ else:
     print("Not hot")</program>
                 <p>Complete a table with the condition checked, the result of the condition, the branch that runs, and the output.</p>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
         <title>Part D: Fix</title>
         <exercise xml:id="ex-cond-fix-1">
             <statement>
-                <p>Correct the errors.</p>
-                <program language="python">
+                <p>The code below has an error. Update it so it runs correctly.</p>
+                <program language="python" interactive="activecode" xml:id="review_conditionals">
 x = 5
 if x = 5:
     print("Equal")</program>
             </statement>
- <response>
-    </response>
+
         </exercise>
         <exercise xml:id="ex-cond-fix-2">
             <statement>
-                <p>Correct the errors.</p>
-                <program language="python">
+                <p>The code below has an error. Update it so it runs correctly.</p>
+                <program language="python" interactive="activecode" xml:id="review_conditionals2">
 score = 90
 if score > 70
     print("Pass")
 else
     print("Try again")</program>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
@@ -96,8 +112,9 @@ else
                 <p>Write an <c>if/else</c> statement that prints <q>Even</q> if a number is even and <q>Odd</q> otherwise, using <c>num = 7</c>.
                 </p>
             </statement>
- <response>
-    </response>
+            <program language="python" interactive="activecode" xml:id="review_conditionals3">
+
+            </program>
         </exercise>
     </subsection>
     <subsection>
@@ -106,8 +123,8 @@ else
             <statement>
                 <p>When should a programmer use <c>if/else</c> instead of just writing one print statement?</p>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
 </section>

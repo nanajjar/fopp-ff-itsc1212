@@ -30,49 +30,87 @@
           </li>
         </ol>
       </statement>
- <response>
-    </response>
+      <response>
+      </response>
     </exercise>
   </subsection>
   <subsection>
     <title>Part B: Trace</title>
-    <program language="python">
+
+    <exercise xml:id="ex-exp-trace">
+      <statement>
+        <program language="python">
 price = 20
 quantity = 3
 name = "Pen"</program>
-    <exercise xml:id="ex-exp-trace">
-      <statement>
-        <p>Determine the result of each expression: <c>price * quantity</c>,          <c>price + 5</c>,          <c>name + &quot;s&quot;</c>,          <c>quantity - 1</c>, and <c>(price * quantity) + 2</c>.
-        </p>
+        <p>Determine the result of each expression: </p>
+        <ul>
+          <li>
+            <c>price * quantity</c> : 
+          </li>
+          <li>
+            <c>price + 5</c> : 
+          </li>
+          <li>
+            <c>name + &quot;s&quot;</c> :         
+          </li>
+          <li>
+            <c>name + &quot;s&quot;</c> :       
+          </li>
+          <li>
+            <c>quantity - 1</c> :
+          </li>
+          <li>
+            <c>(price * quantity) + 2</c> :
+          </li>
+        </ul>
+
+
       </statement>
- <response>
-    </response>
+      <response>
+      </response>
     </exercise>
   </subsection>
   <subsection>
     <title>Part C: Fix</title>
     <exercise xml:id="ex-exp-fix">
       <statement>
-        <p>Fix each expression: <c>&quot;Hello&quot; + 5</c>,          <c>10 / / 2</c>,          <c>&quot;ha&quot; + &quot;ha&quot; + 3</c>, and <c>(4 + 2 * 3</c>.
-        </p>
+        <p>Fix each expression: </p>
+        <ul>
+          <li>
+            <c>&quot;Hello&quot; + 5</c>
+          </li>
+          <li>
+            <c>10 / / 2</c>
+          </li>
+          <li>
+            <c>&quot;ha&quot; + &quot;ha&quot; + 3</c>
+          </li>
+          <li>
+            <c>(4 + 2 * 3</c>
+          </li>
+        </ul>
+
       </statement>
- <response>
-    </response>
+      <response>
+      </response>
     </exercise>
   </subsection>
   <subsection>
     <title>Part D: Create</title>
-    <program language="python">
-price = 8
-count = 4
-name = "apple"</program>
+
     <exercise xml:id="ex-exp-create">
+
       <statement>
         <p>Write an expression for the total cost, an expression that creates <q>appleapple</q>, an expression for half the total cost, and an expression that gives the remainder when <c>count</c> is divided by <c>3</c>.
         </p>
       </statement>
- <response>
-    </response>
+      <program xml:id="review_expressions" interactive="activecode" language="python">
+price = 8
+count = 4
+name = "apple"</program>
+
+
     </exercise>
   </subsection>
   <subsection>
@@ -81,8 +119,8 @@ name = "apple"</program>
       <statement>
         <p>Why does using parentheses sometimes change the result of an expression?</p>
       </statement>
- <response>
-    </response>
+      <response>
+      </response>
     </exercise>
   </subsection>
 </section>

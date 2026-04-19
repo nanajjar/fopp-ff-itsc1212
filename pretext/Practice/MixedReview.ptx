@@ -3,7 +3,7 @@
 <section xml:id="ch-mixed-review">
     <title>Mixed Review</title>
     <introduction>
-        <p>Bring multiple CS1 concepts together in one guided review activity.</p>
+        <p>Bring multiple CS1 concepts together in this review activity.</p>
     </introduction>
     <subsection>
         <title>Part A: Code Dissubsection</title>
@@ -22,8 +22,8 @@ result = count_long_words(items)
 print(result)</program>
                 <p>Identify the function name, parameter, return type, loop used, condition checked, and output.</p>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
@@ -33,8 +33,8 @@ print(result)</program>
                 <p>Complete a trace table for the program above with columns for iteration, <c>word</c>, whether <c>len(word) &gt; 4</c>, and <c>total</c>.
                 </p>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
     <subsection>
@@ -42,7 +42,7 @@ print(result)</program>
         <exercise xml:id="ex-mixed-fix">
             <statement>
                 <p>The code below is meant to count how many even numbers are in a list, but it has errors. Correct it.</p>
-                <program language="python">
+                <program language="python" interactive="activecode" xml:id="review_mix">
 def count_evens(numbers)
     total = 0
     for num in numbers
@@ -50,8 +50,7 @@ def count_evens(numbers)
             total = total + 1
     return total</program>
             </statement>
- <response>
-    </response>
+
         </exercise>
     </subsection>
     <subsection>
@@ -60,18 +59,18 @@ def count_evens(numbers)
             <statement>
                 <p>Write a function named <c>count_a_words(words)</c> that takes a list of strings and returns how many words start with the letter <c>a</c>. Then write three test calls.</p>
             </statement>
- <response>
-    </response>
+            <program language="python" interactive="activecode" xml:id="review_mix1">
+            </program>
         </exercise>
     </subsection>
     <subsection>
         <title>Think About ...</title>
         <exercise xml:id="ex-mixed-reflection">
             <statement>
-                <p>Which topic in this worksheet felt strongest for you? Which one needs more review?</p>
+                <p>Which topic in this section felt strongest for you? Which one needs more review?</p>
             </statement>
- <response>
-    </response>
+            <response>
+            </response>
         </exercise>
     </subsection>
 </section>
