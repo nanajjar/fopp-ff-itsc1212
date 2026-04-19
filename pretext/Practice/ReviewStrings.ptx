@@ -12,6 +12,8 @@
 word = "computer"</program>
                 <p>Identify the first character, the last character, the character at index <c>3</c>, and the length of the string.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -21,6 +23,8 @@ word = "computer"</program>
                 <p>Determine the result of each expression: <c>word[0]</c>,                    <c>word[1:4]</c>,                    <c>word + &quot; science&quot;</c>,                    <c>&quot;ha&quot; * 2</c>, and <c>word.upper()</c>.
                 </p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -30,6 +34,8 @@ word = "computer"</program>
                 <p>Match each method to what it does: <c>lower()</c>,                    <c>upper()</c>,                    <c>strip()</c>,                    <c>replace()</c>,                    <c>find()</c>.
                 </p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -41,6 +47,8 @@ name = "Sam"
 message = "Hello, " +  name + 5</program>
                 <p>Correct the error.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
         <exercise xml:id="ex-str-fix-2">
             <statement>
@@ -49,6 +57,8 @@ text = "hello"
 text[0] = "H"</program>
                 <p>Correct the error.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
         <exercise xml:id="ex-str-fix-3">
             <statement>
@@ -57,6 +67,8 @@ word = "cat"
 print(word[5])</program>
                 <p>Correct the error.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -65,6 +77,8 @@ print(word[5])</program>
             <statement>
                 <p>Using <c>name = &quot;Jordan&quot;</c>, write code that creates and prints the string <q>Hello, Jordan!</q>. Then write code that prints only the first three letters of the name.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -73,6 +87,8 @@ print(word[5])</program>
             <statement>
                 <p>How are strings similar to lists? How are they different?</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
 </section>

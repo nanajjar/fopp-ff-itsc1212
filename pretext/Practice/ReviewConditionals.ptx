@@ -11,6 +11,8 @@
                 <p>Determine whether each condition is true or false: <c>5 &gt; 2</c>,                    <c>3 == 4</c>,                    <c>10 != 7</c>,                    <c>len(&quot;cat&quot;) &gt; 5</c>, and <c>8 &lt;= 8</c>.
                 </p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -25,6 +27,8 @@ if age >= 18:
 else:
     print("Minor")</program>
             </statement>
+ <response>
+    </response>
         </exercise>
         <exercise xml:id="ex-cond-branch-2">
             <statement>
@@ -38,6 +42,8 @@ elif score >= 80:
 else:
     print("Needs Improvement")</program>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -52,6 +58,8 @@ else:
     print("Not hot")</program>
                 <p>Complete a table with the condition checked, the result of the condition, the branch that runs, and the output.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -64,6 +72,8 @@ x = 5
 if x = 5:
     print("Equal")</program>
             </statement>
+ <response>
+    </response>
         </exercise>
         <exercise xml:id="ex-cond-fix-2">
             <statement>
@@ -75,6 +85,8 @@ if score > 70
 else
     print("Try again")</program>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -84,14 +96,18 @@ else
                 <p>Write an <c>if/else</c> statement that prints <q>Even</q> if a number is even and <q>Odd</q> otherwise, using <c>num = 7</c>.
                 </p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
-        <title>Reflection</title>
+        <title>Think About ...</title>
         <exercise xml:id="ex-cond-reflection">
             <statement>
                 <p>When should a programmer use <c>if/else</c> instead of just writing one print statement?</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
 </section>

@@ -16,7 +16,9 @@ for i in range(5):
 count = 0
 while count &lt; 3:
     print(count)
-    count += 1</program></statement></exercise></subsection>
+    count += 1</program></statement>
+ <response>
+    </response></exercise></subsection>
 <subsection><title>Part B: Trace the Loop</title><exercise xml:id="ex-loop-trace">
                     <statement>
                         <program language="python">
@@ -25,6 +27,8 @@ for num in [2, 4, 6]:
     total = total + num</program>
                         <p>Trace the values of <c>num</c> and <c>total</c> at each iteration.</p>
                     </statement>
+ <response>
+    </response>
                 </exercise>
             </subsection>
             <subsection>
@@ -39,18 +43,24 @@ for ch in "cat":
 x = 1
 while x &lt;= 3:
     print(x)
-    x += 1</program></statement></exercise></subsection>
+    x += 1</program></statement>
+ <response>
+    </response></exercise></subsection>
 <subsection><title>Part D: Spot the Problem</title><exercise xml:id="ex-loop-problem">
                             <statement>
                                 <program language="python">
 count = 1
 while count &lt;= 5:
-    print(count)</program><p>Explain what is wrong with this loop.</p></statement></exercise></subsection>
+    print(count)</program><p>Explain what is wrong with this loop.</p></statement>
+ <response>
+    </response></exercise></subsection>
 <subsection><title>Part E: Create</title><exercise xml:id="ex-loop-create">
                                     <statement>
                                         <p>Write a <c>for</c> loop that prints each value in the list <c>[1, 2, 3, 4]</c>. Write a <c>while</c> loop that prints the numbers <c>1</c> through <c>5</c>. Then write a loop that counts how many letters are in the string <c>&quot;hello&quot;</c>.
                                         </p>
                                     </statement>
+ <response>
+    </response>
                                 </exercise>
                             </subsection>
                             <subsection>
@@ -59,6 +69,8 @@ while count &lt;= 5:
                                     <statement>
                                         <p>When is a <c>for</c> loop a better choice than a <c>while</c> loop?</p>
                                     </statement>
+ <response>
+    </response>
                                 </exercise>
                             </subsection>
                         </section>

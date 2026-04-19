@@ -27,6 +27,8 @@
           </li>
         </ol>
       </statement>
+ <response>
+    </response>
     </exercise>
   </subsection>
   <subsection>
@@ -36,6 +38,8 @@
         <p>Explain in words what each line does: <c>count = count + 1</c>,          <c>print(name)</c>,          <c>total = price * quantity</c>, and <c>if age &gt;= 18:</c>.
         </p>
       </statement>
+ <response>
+    </response>
     </exercise>
   </subsection>
   <subsection>
@@ -45,6 +49,8 @@
         <p>Reorder the following lines so they form a logical program: <c>print(total)</c>,          <c>price = 5</c>,          <c>quantity = 2</c>,          <c>total = price * quantity</c>.
         </p>
       </statement>
+ <response>
+    </response>
     </exercise>
   </subsection>
   <subsection>
@@ -53,14 +59,18 @@
       <statement>
         <p>Write a 4-line program that creates <c>name</c>, creates <c>age</c>, creates <c>message</c>, and prints the message.</p>
       </statement>
+ <response>
+    </response>
     </exercise>
   </subsection>
   <subsection>
-    <title>Reflection</title>
+    <title>Think About ...</title>
     <exercise xml:id="ex-stmt-reflection">
       <statement>
         <p>Why is it important for program statements to appear in the correct order?</p>
       </statement>
+ <response>
+    </response>
     </exercise>
   </subsection>
 </section>

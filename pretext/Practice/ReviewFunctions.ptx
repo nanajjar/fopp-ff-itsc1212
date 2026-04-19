@@ -15,6 +15,8 @@ def double(value):
 
 result = double(5)</program>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -27,6 +29,8 @@ def add_one(num):
                 <p>What value is returned by <c>add_one(4)</c>,                    <c>add_one(10)</c>, and <c>add_one(-1)</c>?
                 </p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -45,6 +49,8 @@ def is_positive(num):
     return num > 0</program>
                 <p>Purposes: returns a greeting string; checks whether a number is positive; returns the square of a number.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -57,6 +63,8 @@ def multiply(a, b)
     result = a * b
     print return result</program>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -65,6 +73,8 @@ def multiply(a, b)
             <statement>
                 <p>Write a function named <c>subtract</c> that takes two parameters and returns the difference of the first minus the second. Then write three test calls.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -73,6 +83,8 @@ def multiply(a, b)
             <statement>
                 <p>What is the difference between <c>print()</c> and <c>return</c> inside a function?</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
 </section>

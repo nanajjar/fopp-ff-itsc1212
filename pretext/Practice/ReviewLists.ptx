@@ -12,6 +12,8 @@
 colors = ["red", "blue", "green", "yellow"]</program>
                 <p>Identify the first item, the last item, the item at index <c>2</c>, and the length of the list.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -25,6 +27,8 @@ numbers[1] = 99
 numbers.pop(0)</program>
                 <p>Trace the value of <c>numbers</c> after each line.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -36,6 +40,8 @@ values = [1, 2, 3]
 print(values[3])</program>
                 <p>Correct the mistake.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
         <exercise xml:id="ex-list-fix-2">
             <statement>
@@ -44,6 +50,8 @@ names = ["Ana", "Ben"]
 names.replace("Ana", "Ali")</program>
                 <p>Correct the mistake.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
         <exercise xml:id="ex-list-fix-3">
             <statement>
@@ -52,6 +60,8 @@ scores = [80, 90, 100]
 scores.append[70]</program>
                 <p>Correct the mistake.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -60,6 +70,8 @@ scores.append[70]</program>
             <statement>
                 <p>Write a list named <c>foods</c> containing four food names. Print the second item, add one more item, and replace the first item with a new value.</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
     <subsection>
@@ -68,6 +80,8 @@ scores.append[70]</program>
             <statement>
                 <p>What is the difference between changing a list item and adding a new list item?</p>
             </statement>
+ <response>
+    </response>
         </exercise>
     </subsection>
 </section>
