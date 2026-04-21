@@ -10,6 +10,7 @@
     <xi:include href='./FlowofExecutionoftheforLoop.ptx' />
     <xi:include href='./Stringsandforloops.ptx' />
     <!-- <xi:include href='./Listsandforloops.ptx' /> -->
+    <xi:include href='./TheRangeFunction.ptx' />
     <xi:include href='./TheAccumulatorPattern.ptx' />
     <!-- <xi:include href='./TraversalandtheforLoopByIndex.ptx' /> -->
     <!-- <xi:include href='./NestedIterationImageProcessing.ptx' /> -->
