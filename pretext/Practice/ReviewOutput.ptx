@@ -1,135 +1,160 @@
 <?xml version="1.0"?>
 <section xml:id="ch-output">
-      <title>Review - Output and <c>print()</c></title>
-      <introduction>
-        <p>Practice using <c>print()</c> to display output, predict what programs print, and fix common output mistakes.</p>
-      </introduction>
-      <subsection xml:id="output-reference">
-        <title>Quick Reference</title>
-        <p><c>print()</c> displays output to the screen. It can print strings, numbers, variables, and expression results. When you print multiple values separated by commas, Python places a space between them in the output.</p>
-      </subsection>
-      <subsection xml:id="output-recognize">
-        <title>Part A: Recognize</title>
-        <exercise xml:id="ex-output-recognize">
-          <statement>
-            <p>Study the code below and answer the questions.</p>
-            <program language="python">
+  <title>Review - Output and <c>print()</c>
+  </title>
+  <introduction>
+    <p>Practice using <c>print()</c> to display output, predict what programs print, and fix common output mistakes.</p>
+  </introduction>
+  <subsection xml:id="output-reference">
+    <title>Quick Reference</title>
+    <p>
+      <c>print()</c> displays output to the screen. It can print strings, numbers, variables, and expression results. When you print multiple values separated by commas, Python places a space between them in the output.</p>
+  </subsection>
+  <subsection xml:id="output-recognize">
+    <title>Part A: Recognize</title>
+    <exercise xml:id="ex-output-recognize">
+      <statement>
+        <p>Study the code below and answer the questions.</p>
+        <program language="python">
 name = "Raya"
 print("Hello")
 print(name)</program>
-            <ol marker="1">
-              <li>Which line prints a string literal?</li>
-              <li>Which line prints the value stored in a variable?</li>
-              <li>What is the purpose of <c>print()</c>?</li>
-            </ol>
-          </statement>
-          <respnse>
+        <ol marker="1">
+          <li>Which line prints a string literal?</li>
+          <li>Which line prints the value stored in a variable?</li>
+          <li>What is the purpose of <c>print()</c>?
+          </li>
+        </ol>
+      </statement>
+      <response>
 
-          </respnse>
-        </exercise>
-      </subsection>
-      <subsection xml:id="output-predict">
-        <title>Part B: Predict the Output</title>
-        <exercise xml:id="ex-output-predict-1">
-          <statement>
-            <p>What is printed?</p>
-            <program language="python">
+      </response>
+    </exercise>
+  </subsection>
+  <subsection xml:id="output-predict">
+    <title>Part B: Predict the Output</title>
+    <exercise xml:id="ex-output-predict-1">
+      <statement>
+        <p>What is printed?</p>
+        <program language="python">
 print("CS Rocks")</program>
-          </statement>
-        </exercise>
-        <exercise xml:id="ex-output-predict-2">
-          <statement>
-            <p>What is printed?</p>
-            <program language="python">
+      </statement>
+      <response>
+
+      </response>
+    </exercise>
+    <exercise xml:id="ex-output-predict-2">
+      <statement>
+        <p>What is printed?</p>
+        <program language="python">
 name = "Jordan"
 print("Hello, " + name + "!")</program>
-          </statement>
-        </exercise>
-        <exercise xml:id="ex-output-predict-3">
-          <statement>
-            <p>What is printed?</p>
-            <program language="python">
+      </statement>
+      <response>
+
+      </response>
+    </exercise>
+    <exercise xml:id="ex-output-predict-3">
+      <statement>
+        <p>What is printed?</p>
+        <program language="python">
 x = 4
 y = 6
 print(x + y)</program>
-          </statement>
-        </exercise>
-        <exercise xml:id="ex-output-predict-4">
-          <statement>
-            <p>What is printed?</p>
-            <program language="python">
-print("Age:", 18)</program>
-          </statement>
-          <response>
+      </statement>
+      <response>
 
-          </response>
-        </exercise>
-      </subsection>
-      <subsection xml:id="output-explain">
-        <title>Part C: Explain</title>
-        <exercise xml:id="ex-output-explain">
-          <statement>
-            <p>Explain the difference between each pair.</p>
-            <ol marker="1">
-              <li><c>print("5")</c> and <c>print(5)</c></li>
-              <li><c>print(name)</c> and <c>print("name")</c></li>
-              <li><c>print("Age:", 18)</c> and <c>print("Age: " + "18")</c></li>
-            </ol>
-          </statement>
-        </exercise>
-      </subsection>
-      <subsection xml:id="output-fix">
-        <title>Part D: Fix</title>
-        <exercise xml:id="ex-output-fix-1">
-          <statement>
-            <p>Rewrite the code so it works correctly.</p>
-            <program language="python" interactive="activecode" label="output-fix-1">
+      </response>
+    </exercise>
+    <exercise xml:id="ex-output-predict-4">
+      <statement>
+        <p>What is printed?</p>
+        <program language="python">
+print("Age:", 18)</program>
+      </statement>
+      <response>
+
+      </response>
+    </exercise>
+  </subsection>
+  <subsection xml:id="output-explain">
+    <title>Part C: Explain</title>
+    <exercise xml:id="ex-output-explain">
+      <statement>
+        <p>Explain the difference between each pair.</p>
+        <ol marker="1">
+          <li>
+            <c>print("5")</c> and <c>print(5)</c>
+          </li>
+          <li>
+            <c>print(name)</c> and <c>print("name")</c>
+          </li>
+          <li>
+            <c>print("Age:", 18)</c> and <c>print("Age: " + "18")</c>
+          </li>
+        </ol>
+      </statement>
+      <response>
+
+      </response>
+    </exercise>
+  </subsection>
+  <subsection xml:id="output-fix">
+    <title>Part D: Fix</title>
+    <exercise xml:id="ex-output-fix-1">
+      <statement>
+        <p>Rewrite the code so it works correctly.</p>
+        <program language="python" interactive="activecode" label="output-fix-1">
 print(Hello)</program>
-          </statement>
-        </exercise>
-        <exercise xml:id="ex-output-fix-2">
-          <statement>
-            <p>Rewrite the code so it works correctly.</p>
-            <program language="python" interactive="activecode" label="output-fix-2">
+      </statement>
+    </exercise>
+    <exercise xml:id="ex-output-fix-2">
+      <statement>
+        <p>Rewrite the code so it works correctly.</p>
+        <program language="python" interactive="activecode" label="output-fix-2">
 name = "Raya"
 print("Hello, " name)</program>
-          </statement>
-        </exercise>
-        <exercise xml:id="ex-output-fix-3">
-          <statement>
-            <p>Rewrite the code so it prints the sentence <q>I am 18 years old.</q></p>
-            <program language="python" interactive="activecode" label="output-fix-3">
+      </statement>
+    </exercise>
+    <exercise xml:id="ex-output-fix-3">
+      <statement>
+        <p>Rewrite the code so it prints the sentence <q>I am 18 years old.</q>
+        </p>
+        <program language="python" interactive="activecode" label="output-fix-3">
 age = 18
 print("I am " + age + " years old.")</program>
-          </statement>
-        </exercise>
-      </subsection>
-      <subsection xml:id="output-create">
-        <title>Part E: Create</title>
-        <exercise xml:id="ex-output-create">
-          <statement>
-            <p>Write code for each task.</p>
-            <ol marker="1">
-              <li>Print the message <q>Welcome to CS1!</q></li>
-              <li>Create a variable named <c>score</c> with the value <c>95</c> and print it.</li>
-              <li>Create a variable named <c>name</c> and print the greeting <q>Hello, &lt;name&gt;!</q></li>
-              <li>Print the result of adding <c>8</c> and <c>2</c>.</li>
-            </ol>
-          </statement>
-                      <program language="python" interactive="activecode" label="output-write-1">
-</program>
-        </exercise>
-      </subsection>
-      <subsection xml:id="output-reflection">
-        <title>Reflection</title>
-        <exercise xml:id="ex-output-reflection">
-          <statement>
-            <p>When should you print a value directly, and when is it helpful to store the value in a variable first?</p>
-          </statement>
-        <response>
+      </statement>
+    </exercise>
+  </subsection>
+  <subsection xml:id="output-create">
+    <title>Part E: Create</title>
+    <exercise xml:id="ex-output-create">
+      <statement>
+        <p>Write code for each task.</p>
+        <ol marker="1">
+          <li>Print the message <q>Welcome to CS1!</q>
+          </li>
+          <li>Create a variable named <c>score</c> with the value <c>95</c> and print it.</li>
+          <li>Create a variable named <c>name</c> and print the greeting <q>Hello, &lt;name&gt;!</q>
+          </li>
+          <li>Print the result of adding <c>8</c> and <c>2</c>.
+          </li>
+        </ol>
+      </statement>
+      <program language="python" interactive="activecode" label="output-write-1">
+      </program>
+    </exercise>
+  </subsection>
+  <subsection xml:id="output-reflection">
+    <title>Reflection</title>
+    <exercise xml:id="ex-output-reflection">
+      <statement>
+        <p>When should you print a value directly, and when is it helpful to store the value in a variable first?</p>
+      </statement>
+      <response>
 
-        </response>
-      </exercise>
+      </response>
+    </exercise>
 
-      </subsection>
-    </section>
+  </subsection>
+</section>

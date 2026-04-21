@@ -27,6 +27,9 @@ print(name)</program>
               <li>What data type is the value returned by <c>input()</c>?</li>
             </ol>
           </statement>
+          <response>
+
+          </response>
         </exercise>
       </subsection>
       <subsection xml:id="input-predict">
@@ -38,6 +41,9 @@ print(name)</program>
 name = input("Enter your name: ")
 print("Hello, " + name)</program>
           </statement>
+          <response>
+            
+          </response>
         </exercise>
         <exercise xml:id="ex-input-predict-2">
           <statement>
@@ -46,6 +52,9 @@ print("Hello, " + name)</program>
 age = input("Enter your age: ")
 print(age)</program>
           </statement>
+          <response>
+            
+          </response>
         </exercise>
         <exercise xml:id="ex-input-predict-3">
           <statement>
@@ -54,6 +63,9 @@ print(age)</program>
 num = input("Enter a number: ")
 print(num + num)</program>
           </statement>
+          <response>
+            
+          </response>
         </exercise>
       </subsection>
       <subsection xml:id="input-explain">
@@ -67,6 +79,9 @@ value = input("Enter a number: ")</program>
             <program language="python">
 value = int(input("Enter a number: "))</program>
           </statement>
+          <response>
+            
+          </response>
         </exercise>
       </subsection>
       <subsection xml:id="input-fix">
