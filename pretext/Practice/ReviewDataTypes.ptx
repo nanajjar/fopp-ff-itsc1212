@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+<section xml:id="ch-data-types">
+      <title>Review - Data Types</title>
+      <introduction>
+        <p>Practice identifying common Python data types and understanding how data types affect what operations can be performed.</p>
+      </introduction>
+      <subsection xml:id="dtype-reference">
+        <title>Quick Reference</title>
+        <p>Common data types in we covered include <c>int</c> for whole numbers, <c>float</c> for decimal numbers, <c>str</c> for text in quotes, <c>bool</c> for <c>True</c> or <c>False</c>, and <c>list</c> for collections of values.</p>
+      </subsection>
+      <subsection xml:id="dtype-identify">
+        <title>Part A: Identify the Data Type</title>
+        <exercise xml:id="ex-dtype-identify">
+          <statement>
+            <p>For each value, write its data type: <c>int</c>, <c>float</c>, <c>str</c>, <c>bool</c>, and <c>list</c>.</p>
+
+            <ol marker="1">
+              <li><c>7</c></li>
+              <li><c>3.14</c></li>
+              <li><c>&quot;hello&quot;</c></li>
+              <li><c>True</c></li>
+              <li><c>[1, 2, 3]</c></li>
+              <li><c>&quot;42&quot;</c></li>
+              <li><c>False</c></li>
+              <li><c>9.0</c></li>
+            </ol>
+          </statement>
+          <response>
+          </response>
+        </exercise>
+      </subsection>
+    
+      <subsection xml:id="dtype-predict">
+        <title>Part B: Predict What Happens</title>
+        <exercise xml:id="ex-dtype-predict">
+          <statement>
+            <p>For each expression, decide what the result is or whether it causes an error.</p>
+            <ol marker="1">
+              <li><c>5 + 3</c></li>
+              <li><c>&quot;hi&quot; + &quot;there&quot;</c></li>
+              <li><c>&quot;hi&quot; * 3</c></li>
+              <li><c>5 + &quot;3&quot;</c></li>
+              <li><c>10 / 2</c></li>
+              <li><c>True + 1</c></li>
+              <li><c>[1, 2] + [3, 4]</c></li>
+            </ol>
+          </statement>
+ <response>
+          </response>
+        </exercise>
+      </subsection>
+      <subsection xml:id="dtype-fix">
+        <title>Part C: Fix the Type Problem</title>
+        <exercise xml:id="ex-dtype-fix-1">
+          <statement>
+            <p>Rewrite the code so it works correctly.</p>
+            <program language="python" interactive="activecode" label="dtype-fix-1">
+age = "18"
+print(age + 1)</program>
+          </statement>
+        </exercise>
+        <exercise xml:id="ex-dtype-fix-2">
+          <statement>
+            <p>Rewrite the code so it works correctly.</p>
+            <program language="python" interactive="activecode" label="dtype-fix-2">
+price = 10
+message = "Total: " + price
+print(message)</program>
+          </statement>
+        </exercise>
+        <exercise xml:id="ex-dtype-fix-3">
+          <statement>
+            <p>Rewrite the code so it works correctly.</p>
+            <program language="python" interactive="activecode" label="dtype-fix-3">
+value = 4.5
+print("Value is " + value)</program>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="dtype-create">
+        <title>Part D: Create</title>
+        <exercise xml:id="ex-dtype-create">
+          <statement>
+            <p>Write one variable that stores an <c>int</c>, one that stores a <c>float</c>, one that stores a <c>str</c>, one that stores a <c>bool</c>, and one that stores a <c>list</c>.</p>
+          </statement>
+          <response>
+
+          </response>
+        </exercise>
+      
+      </subsection>
+      <subsection xml:id="dtype-reflection">
+        <title>Think About ...</title>
+        <exercise xml:id="ex-dtype-reflection">
+          <statement>
+            <p>Why is it important for a programmer to know the data type of a value?</p>
+          </statement>
+          <response>
+
+          </response>
+        </exercise>
+      </subsection>
+    </section>

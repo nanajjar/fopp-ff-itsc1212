@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<section xml:id="ch-input">
+      <title>Review - Input</title>
+      <introduction>
+        <p>Practice using <c>input()</c> to get values from the user and understand that <c>input()</c> returns a string.</p>
+      </introduction>
+      <subsection xml:id="input-reference">
+        <title>Quick Reference</title>
+        <p><c>input()</c> gets information typed by the user. The value returned by <c>input()</c> is always a <c>str</c>. Use <c>int()</c> or <c>float()</c> if you want to convert the input to a number.</p>
+        <program language="python">
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))</program>
+      </subsection>
+      <subsection xml:id="input-recognize">
+        <title>Part A: Recognize</title>
+
+        <exercise xml:id="ex-input-recognize">
+          <statement>
+            <p>Answer the following questions based on this code snippet.</p>
+                    <program language="python">
+name = input("Enter your name: ")
+print(name)</program>
+            <ol marker="1">
+              <li>What does <c>input()</c> do?</li>
+              <li>What message is shown to the user?</li>
+              <li>What variable stores the user's response?</li>
+              <li>What data type is the value returned by <c>input()</c>?</li>
+            </ol>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="input-predict">
+        <title>Part B: Predict What Happens</title>
+        <exercise xml:id="ex-input-predict-1">
+          <statement>
+            <p>If the user types <c>Raya</c>, what is printed given the following code snippet?</p>
+            <program language="python">
+name = input("Enter your name: ")
+print("Hello, " + name)</program>
+          </statement>
+        </exercise>
+        <exercise xml:id="ex-input-predict-2">
+          <statement>
+            <p>If the user types <c>18</c>, what is stored in <c>age</c> given the following code snippet?</p>
+            <program language="python">
+age = input("Enter your age: ")
+print(age)</program>
+          </statement>
+        </exercise>
+        <exercise xml:id="ex-input-predict-3">
+          <statement>
+            <p>If the user types <c>5</c>, what is printed given the following code snippet?</p>
+            <program language="python">
+num = input("Enter a number: ")
+print(num + num)</program>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="input-explain">
+        <title>Part C: Explain</title>
+        <exercise xml:id="ex-input-explain">
+          <statement>
+            
+              <p>What is the difference between these two lines?</p>
+            <program language="python">
+value = input("Enter a number: ")</program>
+            <program language="python">
+value = int(input("Enter a number: "))</program>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="input-fix">
+        <title>Part D: Fix</title>
+        <exercise xml:id="ex-input-fix-1">
+          <statement>
+            <p>Rewrite the code so it works correctly.</p>
+            <program language="python" interactive="activecode" label="input-fix-1">
+age = input("Enter your age: ")
+next_age = age + 1
+print(next_age)</program>
+          </statement>
+        </exercise>
+        <exercise xml:id="ex-input-fix-2">
+          <statement>
+            <p>Rewrite the code so it works correctly.</p>
+            <program language="python" interactive="activecode" label="input-fix-2">
+num1 = input("Enter a number: ")
+num2 = input("Enter another number: ")
+print(num1 + num2)</program>
+          </statement>
+        </exercise>
+        <exercise xml:id="ex-input-fix-3">
+          <statement>
+            <p>Rewrite the code so it works correctly.</p>
+            <program language="python" interactive="activecode" label="input-fix-3">
+name = input("Enter your name: ")
+print("Hello, " name)</program>
+          </statement>
+        </exercise>
+      </subsection>
+      <subsection xml:id="input-create">
+        <title>Part E: Create</title>
+        <exercise xml:id="ex-input-create">
+          <statement>
+            <p>Write code that asks the user for their name and prints a greeting. Then asks for their favorite number and prints it back. Finally, it asks the user for two whole numbers, and prints their sum.</p>
+          </statement>
+                      <program language="python" interactive="activecode" label="input-write">
+</program>
+        </exercise>
+      </subsection>
+      <subsection xml:id="input-reflection">
+        <title>Think About ...</title>
+        <exercise xml:id="ex-input-reflection">
+          <statement>
+            <p>Why is it sometimes necessary to use <c>int()</c> or <c>float()</c> with <c>input()</c>?</p>
+          </statement>
+        <response>
+
+        </response>
+       </exercise>
+
+      </subsection>
+    </section>
