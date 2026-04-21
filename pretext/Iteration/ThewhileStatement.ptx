@@ -4,28 +4,95 @@
      <p> A basic building block of all programs is to be able to repeat some code over and over
         again. We refer to this repetitive idea as <b>iteration</b>. In this section, we will
         explore some mechanisms for basic iteration. </p>
-    <p> In Python, the <b>for</b> statement allows us to write programs that implement iteration. As
-        a simple example, let's say we have some friends, and we'd like to send them each an email
-        inviting them to our party. We don't quite know how to send email yet, so for the moment
-        we'll just print a message for each friend. </p>
+
         <p>
           In addition to conditional execution, Python also supports repetition—running the same code multiple times—using the <c>while</c> statement.
-            The <c>while</c> statement provides a much more general mechanism for iterating. Similar to the <c>if</c> statement, it uses
-            a boolean expression to control the flow of execution. The body of while will be repeated as long as the controlling
-            boolean expression evaluates to <c>True</c>.</p>
-  <p>The following two figures show the flow of control. The first focuses on the flow inside the while loop and the second
+            The <c>while</c> statement provides a general mechanism for iterating.  When used with other code it can be used to repeat code in a <term>while loop</term>. 
+    Similar to the <c>if</c> statement, it uses a boolean expression to control the flow of execution. 
+    The body of while (code indented one space in from the while statement) will be repeated as long as the controlling boolean expression evaluates to <c>True</c>.
+ </p>
+
+
+             <p>The following two figures show the flow of control. The first focuses on the flow inside the while loop and the second
             shows the while loop in context.</p>
   <image source="MoreAboutIteration/Figures/while_flow.png" width="50%" alt="a diamond at the top has the phrase &quot;Is the condition True?&quot;. Two arrows come out it with either the phrase yes or no on the arrows. The yes arrow points to a box that says &quot;evaluate the statemenets in the body of the loop&quot;. It then has an arrow that unconditionally points back to &quot;Is the condition True?&quot; diamond. The no arrow escapes the loop and points down past the &quot;evaluate&quot; square."/>
   <image source="MoreAboutIteration/Figures/while_loop.png" width="50%" alt="image showing a rectangle with &quot;code block&quot; written on it on top. Then, text that read &quot;while {condition}&quot;: followed by an indented block with &quot;run if {condition} is True&quot; written on it. An arrow points from the bottom of the indented block to the top of the while loop and says &quot;run loop again&quot;. At the bottom of the image is an unindented block that says the phrase &quot;code block.&quot;"/>
-  <p>We can use the <c>while</c> loop to create any type of iteration we wish, including anything that we have previously
-            done with a <c>for</c> loop. For example, the program in the previous section could be rewritten using <c>while</c>.
-            Instead of relying on the <c>range</c> function to produce the numbers for our summation, we will need to produce them
-            ourselves. To do this, we will create a variable called <c>aNumber</c> and initialize it to 1, the first number in the
+ 
+ <p>
+    Let's look at our first Python statement that can be used to build an iteration. 
+    </p>
+
+  <p>Here is a simple example that counts down from 10 to 0.</p>
+  <program xml:id="ac_theWhileStatement_1" label="ac_theWhileStatement_1" interactive="activecode" language="python">
+    <input>
+      count = 10
+      while count > 0:
+        print(count)
+        count = count - 1
+      print("Blastoff!")
+    </input>
+  </program>
+
+  <p>
+    <li>
+      <p><c>count</c> is a normal variable here, but since it is governing the <c>while</c> loop it is also called the <term>loop variable</term>.</p>
+    </li>
+    <li>
+      <p>
+        Line 2 here is the <term>loop condition</term>. 
+        It must always be a boolean expression that will evaluate to <c>False</c> or <c>True</c>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Lines 3 and 4 are the <term>loop body</term>. 
+        The loop body is always indented. 
+        The indentation determines exactly what statements are "in the loop". 
+        The loop body is run each time the loop is repeated.
+      </p>
+    </li>
+    <li>
+      <p>
+        On each <em>iteration</em> or <em>pass</em> of the loop, a check is done to see if the loop condition is True (if <c>count</c> is greater than zero). 
+        If it is not (this is called the <term>terminating condition</term> of the loop), the loop has finished. 
+        Program execution continues at the next statement after the loop body.
+      </p>
+    </li>
+    <li>
+      <p>If <c>count</c> is greater than zero, the loop body is executed again.</p>      
+    </li>
+    <li>
+      <p>At the end of each execution of the body of the loop, Python returns to the <c>while</c> statement, to see if the loop should repeat.</p>
+    </li>
+  </p>
+
+  <p>Notice that if the condition is <c>False</c> the first time through the loop, the statements inside the loop are never executed.</p>
+
+  <warning>
+    <p>
+      Though Python's <c>while</c> is very close to the English <q>while</q>, there is an important difference: 
+      In English <q>while X, do Y</q>, we usually assume that immediately after X becomes false, we stop with Y. 
+      In Python there is <em>not</em> an immediate stop: 
+      After the initial test, any following tests come only after the execution of the <em>whole</em> body, even if the condition becomes false in the middle of the loop body.
+    </p>
+  </warning>
+
+  <p>
+    The body of the loop should change the value of one or more variables so that eventually the condition becomes <c>False</c> and the loop terminates. 
+    Otherwise the loop will repeat forever. 
+    This is called an <term>infinite loop</term>.
+    An endless source of amusement for computer scientists is the observation that the directions written on the back of the shampoo bottle (lather, rinse, repeat) create an infinite loop.
+  </p>
+        
+        
+
+
+  <p>Here is a a program that sums the integers from 1 to N using  a while statement.
+   To do this, we will create a variable called <c>aNumber</c> and initialize it to 1, the first number in the
             summation. Every iteration will add <c>aNumber</c> to the running total until all the values have been used. In order to
             control the iteration, we must create a boolean expression that evaluates to <c>True</c> as long as we want to keep
             adding values to our running total. In this case, as long as <c>aNumber</c> is less than or equal to the bound, we
             should keep going.</p>
-  <p>Here is a new version of the summation program that uses a while statement.</p>
   <program xml:id="ac6_2_1" interactive="activecode" language="python">
     <input>
 def sumTo(aBound):
