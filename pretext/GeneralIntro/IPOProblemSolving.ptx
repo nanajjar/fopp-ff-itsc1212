@@ -3,47 +3,241 @@
   <title>The IPO Model</title>
 
   <p>
-    The basic building blocks of programs (input, output, computation, conditional
-    execution, and repetition) describe the kinds of instructions that appear in nearly
-    every programming language. While these instructions tell us <em>what</em> programs
-    can do, we still need a way to organize them into a coherent plan for solving a
-    problem.
+    Programs are built from common types of instructions, such as getting input, producing output, 
+    performing computations, making decisions, and repeating steps. 
+    These building blocks describe what a program can do.
   </p>
 
   <p>
-    When we solve problems using a computer, we are not just writing code, we are
-    designing a process that transforms information into a result. One simple and
-    powerful way to structure this process is the
-    <term>Input–Process–Output (IPO)</term> model.
+    However, when solving a problem, we also need a way to organize these instructions into a clear plan. 
+    One useful way to do this is the <term>Input-Process-Output (IPO)</term> model, often called the IPO model.
+  </p>
+  <p>
+    The IPO model helps us think about a program in three parts:
   </p>
 
   <ul>
-    <li><em>Input</em>: What information does the program need?</li>
-    <li><em>Process</em>: What computations or steps are performed on that information?</li>
-    <li><em>Output</em>: What result should the program produce?</li>
+    <li>
+      <em>Input</em>:      <p>What information does the program need?
+      The input is the information the program starts with. This might come from the user, from a file, from a sensor, or from values already stored in the program. For example, if a program calculates the area of a rectangle, the input would be the rectangle's length and width.
+     
+      </p>
+    </li>
+    <li>
+      <em>Process</em>:      <p>What does the program do with the input? The process is the set of steps the program performs using the input. This may include calculations, comparisons, decisions, or repeated actions. For example, to calculate the area of a rectangle, the process is multiplying the length by the width.
+      </p>
+    </li>
+
+    <li>
+      <em>Output</em>:      <p> What result should the program produce? The output is the result the program gives back after completing the process. This could be displayed on the screen, returned from a function, saved in a file, or used later in the program. For example, the output of the rectangle program would be the area.
+      </p>
+    </li>
+
   </ul>
 
-<image source="GeneralIntro/Figures/ipo.png"  alt="flowchart symbols"/>
+  <image source="GeneralIntro/Figures/ipo.png" alt="flowchart symbols"/>
 
   <p>
-     Every program you write, no matter how small or large, can be understood in terms
-    of these three components. Even a single line of code often follows this model.
- Seen this way, the IPO model does not replace the program building blocks, it
-    organizes them. Each block plays a role in transforming inputs into outputs through
-    a sequence of well-defined steps.
+          Once we understand these three parts, we can use them as a starting point for planning a program. 
+        Here's an example of how to use the IPO model to plan a program.
   </p>
+  <!-- <ul>
+          <li>
+            What information does the program need?
+          </li>
+          <li>
+            What steps should the program perform?
+          </li>
+          <li>
+            What result should the program produce?
+          </li>
+        </ul> -->
+
+
 
   <p>
-    As programs grow more complex, this organization becomes increasingly important.
-    By using IPO to guide problem solving, we can break large tasks into smaller subtasks,
-    each of which follows the same input-process-output pattern. Functions are a natural
-    way to represent these subtasks, allowing us to combine simple building blocks into
-    larger solutions.
+Suppose a food delivery app needs to show the customer the final cost of an order before the customer places it. 
+To solve this problem, we first identify the information the program needs, then decide what calculations the program must perform, and finally determine what result the program should produce.
   </p>
   <p>
+The app already has the cost of the food, the sales tax rate, the delivery fee, and the tip amount. 
+The program needs to use these values to calculate the total amount the customer will pay.  Using the IPO model, we can organize the problem like this:        
+  </p>
+  <p>
+        Input:
+          The information the program needs:
+    <ul>
+      <li>
+              food cost
+      </li>
+      <li>
+              sales tax rate
+      </li>
+      <li>
+              delivery amount
+      </li>
+      <li>
+              tip amount
+      </li>
+    </ul>
+  </p>
+  <p>
+        Process:
+          The steps the program performs:
+    <ul>
+      <li>
+              calculate the tax using the food cost and sales tax rate
+      </li>
+      <li>
+              add the food cost, tax, delivery fee, and tip amount
+      </li>
+    </ul>
+  </p>
+  <p>
+        Output:
+          The result the program produces:
+    <ul>
+      <li>
+              the final order total the customer will pay
+      </li>
+
+    </ul>
+  </p>
+  <!-- <p>
+          Thinking this way helps separate the problem-solving plan from the code itself. 
+          Once we understand the input, process, and output, it becomes easier to decide what 
+          variables, expressions, conditionals, loops, or functions we may need.
+        </p> -->
+  <p>
+    Every program you write, whether small or large, can be understood using the three parts of the IPO model: input, process, and output. Even a single line of code can often be viewed this way because it may use some information, perform an action or calculation, and produce a result.
+  </p>
+  <p>
+    The IPO model does not replace the basic building blocks of programming. Instead, it helps organize them. Instructions such as input, output, computation, decisions, and repetition all work together to transform input into output through a clear sequence of steps.
+  </p>
+
+  <p>   
+    As programs grow more complex, this organization becomes even more important. 
+    Large tasks can often be broken into smaller subtasks, and each subtask can be understood using the same 
+    input-process-output pattern. Later in this course, we will see how functions provide a natural way to 
+    represent these subtasks. Functions allow us to build larger solutions by combining smaller IPO-style blocks
+     into a complete program.
+  </p>
+
+  <note>
+    <p>
  A common challenge for beginners in computational problem solving is translating a problem description 
-  into an actionable plan. Before writing code, you can ask what inputs are required, what processing must
-    occur, and what output should be produced. Thinking in this way separates
-    <em>what</em> the program should do from <em>how</em> it is implemented.
-  </p>
+  into an actionable plan. If you find yourself in that position, take a step back and answer the three IPO questions. Thinking in this way separates
+      <em>what</em> the program should do from <em>how</em> it is implemented.
+    </p>
+  </note>
+
+  <exercise label="ipo_mcq0">
+      <statement>
+        <p>Which statement best describes how IPO helps with problem solving?</p>
+      </statement>
+      <choices randomize="yes">
+        <choice>
+          <statement>
+            <p>It tells the computer which programming language to use.</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>It helps organize a problem by identifying what is needed, what must be done, and what result should be produced.</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>It removes the need to write code.</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>It only applies to large programs, not small ones.</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
+
+ <exercise label="ipo_mcq2">
+      <statement>
+        <p>A program asks for a student's three test scores and calculates the average. Which of the following correctly identifies the IPO components?</p>
+
+      </statement>
+      <choices randomize="yes">
+        <choice>
+          <statement>
+            <p>Input: average; Process: test scores; Output: addition</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>Input: test scores; Process: add scores and divide by 3; Output: average</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>Input: divide by 3; Process: average; Output: test scores</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>Input: student name; Process: print scores; Output: test scores</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
+
+    <exercise label="ipo_mcq1">
+      <statement>
+        <p>A program asks the user for a password and checks whether it matches the stored password. Which of the following correctly identifies the IPO components?</p>
+
+      </statement>
+      <choices randomize="yes">
+        <choice>
+          <statement>
+            <p>Input: stored password; Process: display login message; Output: user password</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>Input: user-entered password; Process: compare it to the stored password; Output: whether access is allowed</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>Input: access result; Process: type password; Output: stored password</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>Input: username only; Process: count letters; Output: password</p>
+          </statement>
+          <feedback>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
 </section>
