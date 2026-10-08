@@ -3,7 +3,9 @@
   <title>Drill and Practice</title>
   <exercise label="pz_branching_1">
     <statement>
-      <p>What do these expressions evaluate to?</p>
+      <p>      Before running any code, predict whether each expression will evaluate to True or False.</p>
+
+<p>After you have written down your predictions, use a print() statement for each expression to check your answers.</p>
       <p>
         <ol marker="1">
           <li>
@@ -35,27 +37,15 @@
         </input>
     </program>
     <solution>
-                    
-                        
-                            True
-                        
-                        
-                            False
-                        
-                        
-                            False
-                        
-                        
-                            False
-                        
-                    
-                
-                    <p><ol marker="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
-                </solution>
+      <p> Expected output:<ol marker="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
+    </solution>
   </exercise>
   <exercise label="pz_branching_2">
     <statement>
-      <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator.</p>
+      <p>For each condition, first determine its <term>logical opposites</term>.</p>
+      <p>You may not use the <c>not</c>  operator. Instead, rewrite the condition using a different comparison operator.</p>
+
+<p>After you have written your answer, use a <c>print()</c> statement to test the original condition and its opposite to confirm that they always produce opposite Boolean values.</p>
       <p>
         <ol marker="1">
           <li>
@@ -89,8 +79,8 @@
   </exercise>
   <exercise label="pz_branching_3">
     <statement>
-      <p>Write code that takes an exam mark and prints a string &#x2014; the grade for that mark &#x2014; according to this
-                        scheme:</p>
+
+<p>Write a program that takes an <term> exam mark</term> and determines the corresponding <term>letter grade</term> using the scale below.</p>
       <table>
         <tabular>
           <row header="yes">
@@ -143,10 +133,22 @@
           </row>
         </tabular>
       </table>
-      <p>The square and round brackets denote closed and open intervals.
-                        A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.</p>
-      <p>Test your code by printing the mark and the grade for a number of different marks.</p>
+<p>Pay close attention to the boundary values. For example:</p>
+<ul>
+
+<li>79.99999 should receive a <term>C</term></li>
+<li>80 should receive a <term>B</term></li>
+<li>89.99999 should receive a <term>B</term></li>
+<li>90 should receive a <term>A</term></li>
+</ul>
+<p>Your program should print both the <strong>mark</strong> and the <strong>grade</strong>. </p>
+
+<p>Test your program with several different marks, including values near the grade boundaries.</p>
     </statement>
+    <program interactive="activecode" language="python" xml:id="pz_branching_grade" label="pz_branching_4_grade">
+      <input># your code here
+        </input>
+    </program>
   </exercise>
 
   <exercise label="pz_branching_4">
